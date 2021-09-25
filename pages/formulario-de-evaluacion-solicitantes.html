@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de evaluación de solicitantes</title>
+	<!--W3 modal style-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!--mcss/main.cc contiene estilos-->
+	<link rel="stylesheet" href="../css/main.css"/>
+	<!--Utilización de Google fonts Open Sans-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body onload="myloades()">
+	<div class="grid-stat">
+		<nav class="super-grid__item1__nav" style="width:100%">
+			<ul class="padre">
+				<li class="showes"><a href="#">Listados</a>
+					<ul>
+						<li><a href="../pages/listado-de-pedidos.html">Pedidos</a></li>
+						<li><a href="../pages/listado-de-ofrecimientos.html">Ofrecimientos</a></li>
+					</ul>
+				</li>
+				<li class="showes"><a href="../pages/estadisticas-de-pedidos.html">Estadísticas</a></li>
+				<li class="showes"><a href="#">Evaluaciones</a>
+					<ul>
+						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Evaluación Solicitante</a></li>
+						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Evaluación Oferente</a></li>
+					</ul>
+				</li>
+				<li class="showes"><a href="#">Iniciar Sesion</a>
+					<ul>
+						<li style="width:100%">
+							<a onclick="document.getElementById('login').style.display='block'">
+								INICIAR SESIÓN
+							</a>		
+						</li>
+						<li style="width:100%">
+							<a onclick="document.getElementById('register').style.display='block'">
+								REGISTRARSE
+							</a>		
+						</li>
+					</ul>
+				</li>
+				<li class="showes"><a href="../pages/acerca-de.html">Acerca de:</a></li>
+				<li class="showes"><a href="../pages/contact-us.html">Contáctenos</a></li>
+			</ul>	
+		</nav>
+
+		<nav class="super-grid__item1__nav" style="width:100%">
+			<ul class="padre">
+				<li class="showen"><a href="#">Listings</a>
+					<ul>
+						<li><a href="../pages/listado-de-pedidos.html">Requests listing</a></li>
+						<li><a href="../pages/listado-de-ofrecimientos.html">Offers listing</a></li>
+					</ul>
+				</li>
+				<li class="showen"><a href="../pages/estadisticas-de-pedidos.html">Statistics</a></li>
+				<li class="showen"><a href="#">Evaluations</a>
+					<ul>
+						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Requestor Evaluation</a></li>
+						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Supplier Evaluation</a></li>
+					</ul>
+				</li>
+				<li class="showen"><a href="#">Login/Register</a>
+					<ul>
+						<li style="width:100%">
+							<a onclick="document.getElementById('login').style.display='block'">
+								LOGIN
+							</a>		
+						</li>
+						<li style="width:100%">
+							<a onclick="document.getElementById('register').style.display='block'">
+								REGISTER
+							</a>		
+						</li>
+					</ul>
+				</li>
+				<li class="showen"><a href="../pages/acerca-de.html">About us:</a></li>
+				<li class="showen"><a href="../pages/contact-us.html">Contact us</a></li>
+			</ul>	
+		</nav>
+
+		<nav class="super-grid__item1__nav" style="width:100%">
+			<ul class="padre">
+				<li class="showpt"><a href="#">Listagens</a>
+					<ul>
+						<li><a href="../pages/listado-de-pedidos.html">Lista de solicitações</a></li>
+						<li><a href="../pages/listado-de-ofrecimientos.html">Lista de oferecimentos</a></li>
+					</ul>
+				</li>
+				<li class="showpt"><a href="../pages/estadisticas-de-pedidos.html">Estatisticas</a></li>
+				<li class="showpt"><a href="#">Avaliações</a>
+					<ul>
+						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Avaliação do solicitante</a></li>
+						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Avaliação do fornecedor</a></li>
+					</ul>
+				</li>
+				<li class="showpt"><a href="#">Login/Registro</a>
+					<ul>
+						<li style="width:100%">
+							<a onclick="document.getElementById('login').style.display='block'">
+								Inicio de Sessão
+							</a>		
+						</li>
+						<li style="width:100%">
+							<a onclick="document.getElementById('register').style.display='block'">
+								REGISTRO
+							</a>		
+						</li>
+					</ul>
+				</li>
+				<li class="showpt"><a href="../pages/acerca-de.html">Sobre nós:</a></li>
+				<li class="showpt"><a href="../pages/contact-us.html">Contate-Nos</a></li>
+			</ul>	
+		</nav>
+
+
+	<header class="item2">
+		<div class="header-line-1 super-grid__item1__logo">
+			<img class="header-line-1__image" src="../images/handshake.png" alt="Conectando personas logo"/> <!--- Aqui va el logo --->
+			<h2 class="header-line-1__title showes">Conectando personas</h2>
+			<h2 class="header-line-1__title showen">Connecting people</h2>
+			<h2 class="header-line-1__title showpt">Conectando pessoas</h2>				
+			<img class="header-line-1__idioma" src="../images/language.png" alt="Idioma" onclick="document.getElementById('idioma').style.display='block'" /> <!--- Este seria el selector de idioma --->
+			<a class="header-line-1__exit" href="../index.html" ><img src="../images/icono-exit.png" alt="Icono Exit" /></a>
+		</div>
+	</header>
+
+	<div class="container item3">
+    	<form class="container__form" action="/" id="formulario-evaluacion-solicitante" method="POST">
+        	<div class="container__form__item">
+        	    <label for="nombre">Identificación de Usuario:</label>
+            	<input type="text" id="o-nombre" name="nombre" class="container__form__item__input">
+          	</div>
+			  <div class="container__form__item">
+            	<label for="senecesita">Servicio:</label>
+    	        <select name="senecesita" id="fsservicios" class="container__form__item__input">
+    	          <option value="fsarreglos1">Arreglos-Albañilería</option>
+        	      <option value="fsarreglos2">Arreglos-Carpintería</option>                
+        	      <option value="fsarreglos3">Arreglos-Gas</option>
+        	      <option value="fsarreglos4">Arreglos-Electricidad</option>
+        	      <option value="fsarreglos5">Arreglos-Pintura</option>
+    	          <option value="fsarreglos6">Arreglos-Plomería</option>
+    	          <option value="fsarreglos7">Arreglos-Zinguería</option>
+        	      <option value="fsarreglos8">Arreglos-otros</option>
+            	  <option value="fscuidados1">Cuidados-Ancianos</option>
+            	  <option value="fscuidados2">Cuidados-Baby Sitting</option>
+            	  <option value="fscuidados3">Cuidados-Enfermería</option>
+            	  <option value="fscuidados4">Cuidados-Kinesiología</option>
+            	  <option value="fseducacion1">Educación-Enseñanza particular</option>
+            	  <option value="fseducacion2">Educación-Preparación examenes</option>
+            	  <option value="fseducacion3">Educación-otros</option>
+            	  <option value="fsestetica1">Estética-Masajes</option>
+            	  <option value="fsestetica2">Estética-Maquillaje eventos especiales</option>
+            	  <option value="fsestetica3">Estética-Manicuría</option>
+            	  <option value="fsestetica4">Estética-Pedicuría</option>
+            	  <option value="fsestetica5">Estética-otros</option>
+            	  <option value="fsserviciosv1">Servicios-Jardinería</option>
+            	  <option value="fsserviciosv2">Servicios-Limpieza</option>
+            	  <option value="fsserviciosv3">Servicios-otros</option>
+        	    </select>
+          	</div>
+    	    <div class="container__form__item">
+				<P>El trato fue cordial?</P>
+        	    <input type="radio" id="o-trato-cordial" name="trato-cordial" value="trato cordial" >
+        	    <label for="trato-cordial">Sí</label>
+        	    <input type="radio" id="o-trato-no-cordial" name="trato-cordial" value="trato no cordial">
+        	    <label for="trato-no-cordial">No</label>
+    	    </div>
+	        <div class="container__form__item">
+				<p>Se cumplieron los acuerdos?</p>
+    	        <input type="radio" id="s-acuerdos-cumplidos" name="acuerdos" value="acuerdos cumplidos" >
+    	        <label for="acuerdos cumplidos">Sí</label>
+    	        <input type="radio" id="s-acuerdos-no-cumplidos" name="acuerdos" value="acuerdos no cumplidos" >
+    	        <label for="acuerdos-no-cumplidos">No</label>
+    	    </div>
+	        <div class="container__form__item">
+				<P>Realizaría un nuevo servicio para el solicitante?</P>
+    	        <input type="radio" id="si-nuevo-servicio" name="nuevo-servicio" value="si nuevo servicio" >
+        	    <label for="si-nuevo-servicio">Sí</label>
+        	    <input type="radio" id="no-nuevo-servicio" name="nuevo-servicio" value="no nuevo servicio" >
+        	    <label for="no-nuevo-servicio">No</label>
+        	</div>
+	        <div class="container__form__item">
+				<p>Cómo evaluaria su experiencia?</p>
+    	        <input type="radio" id="s-resultado-final-muy-satisfactorio" name="resultado-final" value="resultado final muy satisfactorio" >
+        	    <label for="resultado-final-muy-satisfactorio">Muy satisfactoria</label>
+        	    <input type="radio" id="s-resultado-final-satisfactorio" name="resultado-final" value="resultado final no satisfactorio" >
+        	    <label for="resultado-final-satisfactorio">Satisfactoria</label>
+        	    <input type="radio" id="s-resultado-final-no-satisfactorio" name="resultado-final" value="resultado final no satisfactorio">
+        	    <label for="resultado-final-no-satisfactorio">No satisfactoria</label>
+    	    </div>
+          	<div class="container__form__justifique">
+				<label for="justifique">Justifique su evaluación</label>
+			</div>
+		    <div class="container__form__referencias"	 > 
+	    	  <textarea id="justifique" name="justifique" rows=10 cols=60></textarea>
+         	</div>
+    	    <div class="container__form__botones">
+        	    <input class="container__form__botones__reset" type="reset" value="Limpiar formulario">
+            	<input class="container__form__botones__submit" type="submit" value="Enviar">
+        	</div>  
+      </form> 
+    </div>
+
+	<div id="login" class="w3-modal w3-transparent w3-auto w3-text-indigo" >
+		<div class="w3-modal-content" id="login">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-container">
+						<span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+						<div class=container>
+							<form class="showes" class="container__form" action="/" id="formulario-login" method="POST">
+							  <div class="container__form__item" class="w3-input">
+								<label for="email">Dirección de E-mail:</label>
+								<input type="email" id="email" name="email" class="container__form__item__input">
+							  </div>
+							  <div class="container__form__item" class="w3-input">
+								<label for="pwd">Contraseña:</label>
+								<input type="password" id="pwd" name="pwd" class="container__form__item__input">
+							  </div>
+							  <div class="container__form__item">
+								<input type="checkbox" id="opcion1" name="opcion1" value="remember">
+								<label for="opcion1"> Recuerdeme</label>
+							  </div>
+							  <div class=container__form__item>
+								<p>Olvidé mi contraseña  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+								<p>Recibirás un correo electrónico con instrucciones para generar una nueva contraseña</p>
+							  </div>
+							  <div class="container__form__botones">
+								<input class="container__form__botones__reset" type="reset" value="Limpiar formulario">
+								<input class="container__form__botones__submit" type="submit" value="Enviar">
+							  </div>
+							</form>
+							<form class="showen" class="container__form" action="/" id="formulario-login" method="POST">
+								<div class="container__form__item" class="w3-input">
+								  <label for="email">Email Address:</label>
+								  <input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+								  <label for="pwd">Password:</label>
+								  <input type="password" id="pwd" name="pwd" class="container__form__item__input">
+								</div>
+								<div class="container__form__item">
+								  <input type="checkbox" id="opcion1" name="opcion1" value="remember">
+								  <label for="opcion1">Remember me</label>
+								</div>
+								<div class=container__form__item>
+								  <p>I forgot my password  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+								  <p>You will receive an email with instructions to generate a new password</p>
+								</div>
+								<div class="container__form__botones">
+								  <input class="container__form__botones__reset" type="reset" value="Clean form">
+								  <input class="container__form__botones__submit" type="submit" value="Send">
+								</div>
+							  </form>
+							  <form class="showpt" class="container__form" action="/" id="formulario-login" method="POST">
+								<div class="container__form__item" class="w3-input">
+								  <label for="email">Endereço de e-mail:</label>
+								  <input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+								  <label for="pwd">Senha:</label>
+								  <input type="password" id="pwd" name="pwd" class="container__form__item__input">
+								</div>
+								<div class="container__form__item">
+								  <input type="checkbox" id="opcion1" name="opcion1" value="remember">
+								  <label for="opcion1">Lembre de mim</label>
+								</div>
+								<div class=container__form__item>
+								  <p>Esqueci a minha senha  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+								  <p>Você receberá um e-mail com instruções para gerar uma nova senha</p>
+								</div>
+								<div class="container__form__botones">
+								  <input class="container__form__botones__reset" type="reset" value="Limpar o formulário">
+								  <input class="container__form__botones__submit" type="submit" value="Mandar">
+								</div>
+							  </form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="register" class="w3-modal w3-auto w3-transparent w3-text-indigo" >
+		<div class="w3-modal-content" id="register">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-container">
+						<span onclick="document.getElementById('register').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+						<div class=container>
+							<form class="showes" class="container__form" action="/" id="formulario-register" method="POST">
+								<div class="container__form__item" class="w3-input">
+									<label for="email">Dirección de E-mail:</label>
+									<input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd1">Contraseña:</label>
+									<input type="password" id="pwd1" name="pwd1" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd">Repetir Contraseña:</label>
+									<input type="password" id="pwd2" name="pwd2" class="container__form__item__input">
+								</div>
+								<div class=container__form__item>
+									<p>Recibirá un correo electrónico con su identificación de usuario</p>
+									<p>Mediante la misma podrá ingresar solicitudes / ofrecimientos</p>
+								</div>
+								<div class="container__form__botones">
+									<input class="container__form__botones__reset" type="reset" value="Limpiar formulario">
+									<input class="container__form__botones__submit" type="submit" value="Enviar">
+								</div>
+							</form>
+							<form class="showen" class="container__form" action="/" id="formulario-register" method="POST">
+								<div class="container__form__item" class="w3-input">
+									<label for="email">Email Address:</label>
+									<input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd1">Password:</label>
+									<input type="password" id="pwd1" name="pwd1" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd">Re-enter password:</label>
+									<input type="password" id="pwd2" name="pwd2" class="container__form__item__input">
+								</div>
+								<div class=container__form__item>
+									<p>You will receive an email with your user ID</p>
+									<p>You need the user id to enter your requests or offers</p>
+								</div>
+								<div class="container__form__botones">
+									<input class="container__form__botones__reset" type="reset" value="Clean form">
+									<input class="container__form__botones__submit" type="submit" value="Send">
+								</div>
+							</form>
+							<form class="showpt" class="container__form" action="/" id="formulario-register" method="POST">
+								<div class="container__form__item" class="w3-input">
+									<label for="email">Endereço de e-mail:</label>
+									<input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd1">Senha:</label>
+									<input type="password" id="pwd1" name="pwd1" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd">Digite novamente a senha:</label>
+									<input type="password" id="pwd2" name="pwd2" class="container__form__item__input">
+								</div>
+								<div class=container__form__item>
+									<p>Você receberá um e-mail com seu ID de usuário</p>
+									<p>Você precisa do ID do usuário para inserir solicitações ou ofertas</p>
+								</div>
+								<div class="container__form__botones">
+									<input class="container__form__botones__reset" type="reset" value="Limpar o formulário">
+									<input class="container__form__botones__submit" type="submit" value="Mandar">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			  </div>
+		</div>
+	</div>
+
+	<div id="idioma" class="w3-modal w3-auto w3-transparent w3-text-indigo" >
+		<div class="w3-modal-content" id="idioma">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-container">
+						<span onclick="document.getElementById('idioma').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+						<!--aqui inserto selextor de idiomas-->
+						<div class=container>
+							<form class="container__form" type="" action = "/" id="formulario-selector-idiomas">
+								<div class="container__form__item showes" >
+									<label for="elige-idioma">Idioma?</label>
+									<button onclick="myloades()" type="button" class="container__form__item__input">Español</button>
+									<button onclick="myloaden()" type="button" class="container__form__item__input">Inglés</button>
+									<button onclick="myloadpt()" type="button" class="container__form__item__input">Portugés</button>
+								</div>
+							</form>
+							<form class="container__form showen" type="" action = "/" id="formulario-selector-idiomas">
+								<div class="container__form__item" >
+									<label for="elige-idioma">Idioma?</label>
+									<button onclick="myloades()" type="button" class="container__form__item__input">Spanish</button>
+									<button onclick="myloaden()" type="button" class="container__form__item__input">English</button>
+									<button onclick="myloadpt()" type="button" class="container__form__item__input">Portuguese</button>
+								</div>
+							</form>
+							<form class="container__form showpt" type="" action = "/" id="formulario-selector-idiomas">
+								<div class="container__form__item" >
+									<label for="elige-idioma">Idioma?</label>
+									<button onclick="myloades()" type="button" class="container__form__item__input">Espanhol</button>
+									<button onclick="myloaden()" type="button" class="container__form__item__input">Inglês</button>
+									<button onclick="myloadpt()" type="button" class="container__form__item__input">Português</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="item4">
+		<p class="showes">Autor: Emma Ines Wahnish</p>
+		<p class="showen">Author: Emma Ines Wahnish</p>
+		<p class="showpt">Autor: Emma Ines Wahnish</p>
+  		<p>Soporte: <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+		function myloades(){
+			$(".showpt").hide();
+			$(".showen").hide();
+			$(".showes").show();
+		}
+
+		function myloaden(){
+			$(".showen").show();
+			$(".showpt").hide();
+			$(".showes").hide();
+		}
+
+		function myloadpt() {
+			$(".showen").hide();
+			$(".showpt").show();
+			$(".showes").hide();
+		}					
+	</script>
+
+</body>
+
+</html>

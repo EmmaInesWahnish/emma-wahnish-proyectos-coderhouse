@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"  charset="UTF-8">
+	<title>Formulario de pedidos</title>
+	<!--W3 modal style-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!--mcss/main.cc contiene estilos-->
+	<link rel="stylesheet" href="../css/main.css"/>
+	<!--Utilización de Google fonts Open Sans-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body onload="myloades()">
+	<div class="grid-stat">
+
+		<nav class="super-grid__item1__nav" style="width:100%">
+			<ul class="padre">
+				<li class="showes"><a href="#">Listados</a>
+					<ul>
+						<li><a href="../pages/listado-de-pedidos.html">Pedidos</a></li>
+						<li><a href="../pages/listado-de-ofrecimientos.html">Ofrecimientos</a></li>
+					</ul>
+				</li>
+				<li class="showes"><a href="../pages/estadisticas-de-pedidos.html">Estadísticas</a></li>
+				<li class="showes"><a href="#">Evaluaciones</a>
+					<ul>
+						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Evaluación Solicitante</a></li>
+						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Evaluación Oferente</a></li>
+					</ul>
+				</li>
+				<li class="showes"><a href="#">Iniciar Sesion</a>
+					<ul>
+						<li style="width:100%">
+							<a onclick="document.getElementById('login').style.display='block'">
+								INICIAR SESIÓN
+							</a>		
+						</li>
+						<li style="width:100%">
+							<a onclick="document.getElementById('register').style.display='block'">
+								REGISTRARSE
+							</a>		
+						</li>
+					</ul>
+				</li>
+				<li class="showes"><a href="../pages/acerca-de.html">Acerca de:</a></li>
+				<li class="showes"><a href="../pages/contact-us.html">Contáctenos</a></li>
+			</ul>	
+		</nav>
+
+		<nav class="super-grid__item1__nav" style="width:100%">
+			<ul class="padre">
+				<li class="showen"><a href="#">Listings</a>
+					<ul>
+						<li><a href="../pages/listado-de-pedidos.html">Requests listing</a></li>
+						<li><a href="../pages/listado-de-ofrecimientos.html">Offers listing</a></li>
+					</ul>
+				</li>
+				<li class="showen"><a href="../pages/estadisticas-de-pedidos.html">Statistics</a></li>
+				<li class="showen"><a href="#">Evaluations</a>
+					<ul>
+						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Requestor Evaluation</a></li>
+						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Supplier Evaluation</a></li>
+					</ul>
+				</li>
+				<li class="showen"><a href="#">Login/Register</a>
+					<ul>
+						<li style="width:100%">
+							<a onclick="document.getElementById('login').style.display='block'">
+								LOGIN
+							</a>		
+						</li>
+						<li style="width:100%">
+							<a onclick="document.getElementById('register').style.display='block'">
+								REGISTER
+							</a>		
+						</li>
+					</ul>
+				</li>
+				<li class="showen"><a href="../pages/acerca-de.html">About us:</a></li>
+				<li class="showen"><a href="../pages/contact-us.html">Contact us</a></li>
+			</ul>	
+		</nav>
+
+		<nav class="super-grid__item1__nav" style="width:100%">
+			<ul class="padre">
+				<li class="showpt"><a href="#">Listagens</a>
+					<ul>
+						<li><a href="../pages/listado-de-pedidos.html">Lista de solicitações</a></li>
+						<li><a href="../pages/listado-de-ofrecimientos.html">Lista de oferecimentos</a></li>
+					</ul>
+				</li>
+				<li class="showpt"><a href="../pages/estadisticas-de-pedidos.html">Estatisticas</a></li>
+				<li class="showpt"><a href="#">Avaliações</a>
+					<ul>
+						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Avaliação do solicitante</a></li>
+						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Avaliação do fornecedor</a></li>
+					</ul>
+				</li>
+				<li class="showpt"><a href="#">Login/Registro</a>
+					<ul>
+						<li style="width:100%">
+							<a onclick="document.getElementById('login').style.display='block'">
+								Inicio de Sessão
+							</a>		
+						</li>
+						<li style="width:100%">
+							<a onclick="document.getElementById('register').style.display='block'">
+								REGISTRO
+							</a>		
+						</li>
+					</ul>
+				</li>
+				<li class="showpt"><a href="../pages/acerca-de.html">Sobre nós:</a></li>
+				<li class="showpt"><a href="../pages/contact-us.html">Contate-Nos</a></li>
+			</ul>	
+		</nav>
+
+	<header class="item2">
+		<div class="header-line-1">
+			<img class="header-line-1__image" src="../images/handshake.png" alt="Conectando personas logo"/> <!--- Aqui va el logo --->
+			<h2 class="header-line-1__title showes">Conectando personas</h2>
+			<h2 class="header-line-1__title showen">Connecting people</h2>
+			<h2 class="header-line-1__title showpt">Conectando pessoas</h2>				
+			<img class="header-line-1__idioma" src="../images/language.png" alt="Idioma" onclick="document.getElementById('idioma').style.display='block'" /> <!--- Este seria el selector de idioma --->
+			<a class="header-line-1__exit" href="../index.html" ><img src="../images/icono-exit.png" alt="Icono Exit" /></a>
+		</div>
+  </header>
+
+	<div class="container item3">
+        <form class="container__form" action="/" id="formulario-pedidos" method="POST">
+          <div class="container__form__item showes">
+            <label for="nombre">Identificación de Usuario:</label>
+            <input type="text" name="nombre" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showes">
+            <label for="pais">Pais:</label>
+            <input type="text" name="pais" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showes">
+            <label for="distrito">Distrito:</label>
+            <input type="text" name="distrito" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showes">
+            <label for="apellido">Teléfono:</label>
+            <input type="text" name="telefono" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showes">
+            <input type="radio" name="informacion" value="Quiero recibir newsletter mensual" >
+            <label for="informacion-si">Autorizo a publicar email</label>
+            <input type="radio" name="informacion" value="No quiero recibir newsletter mensual">
+            <label for="informacion-no">No autorizo a publicar email</label>
+          </div>
+          <div class="container__form__item showes">
+            <label for="sesolicita">Servicio:</label>
+            <select name="sesolicita" class="container__form__item__input">
+              <option value="fnarreglos1">Arreglos-Albañilería</option>
+              <option value="fnarreglos2">Arreglos-Carpintería</option>                
+              <option value="fnarreglos3">Arreglos-Gas</option>
+              <option value="fnarreglos4">Arreglos-Electricidad</option>
+              <option value="fnarreglos5">Arreglos-Pintura</option>
+              <option value="fnarreglos6">Arreglos-Plomería</option>
+              <option value="fnarreglos7">Arreglos-Zinguería</option>
+              <option value="fnarreglos8">Arreglos-otros</option>
+              <option value="fncuidados1">Cuidados-Ancianos</option>
+              <option value="fncuidados2">Cuidados-Baby Sitting</option>
+              <option value="fncuidados3">Cuidados-Enfermería</option>
+              <option value="fncuidados4">Cuidados-Kinesiología</option>
+              <option value="fneducacion1">Educación-Enseñanza particular</option>
+              <option value="fneducacion2">Educación-Preparación examenes</option>
+              <option value="fneducacion3">Educación-otros</option>
+              <option value="fnestetica1">Estética-Masajes</option>
+              <option value="fnestetica2">Estética-Maquillaje eventos especiales</option>
+              <option value="fnestetica3">Estética-Manicuría</option>
+              <option value="fnestetica4">Estética-Pedicuría</option>
+              <option value="fnestetica5">Estética-otros</option>
+              <option value="fnservicios1">Servicios-Jardinería</option>
+              <option value="fnservicios2">Servicios-Limpieza</option>
+              <option value="fnservicios3">Servicios-otros</option>
+            </select>
+          </div>
+          <div class="container__form__descripcion showes">
+			       <label for="descripcion">Descripción</label>
+		  </div>
+		  <div class="container__form__descripcion showes"	 > 
+			       <textarea name="descripcion" rows=10 cols=60></textarea>
+          </div>
+          <div class="container__form__botones showes">
+            <input class="container__form__botones__reset" type="reset" value="Limpiar formulario">
+            <input class="container__form__botones__submit" type="submit" value="Enviar">
+          </div> 
+          <div class="container__form__item showen">
+            <label for="nombre">User ID:</label>
+            <input type="text" name="nombre" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showen">
+            <label for="pais">Pais:</label>
+            <input type="text" name="pais" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showen">
+            <label for="distrito">District:</label>
+            <input type="text" name="distrito" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showen">
+            <label for="apellido">Telephone:</label>
+            <input type="text" name="telefono" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showen">
+            <input type="radio" name="informacion" value="Quiero recibir newsletter mensual" >
+            <label for="informacion-si">I authorize to publish email</label>
+            <input type="radio" name="informacion" value="No quiero recibir newsletter mensual">
+            <label for="informacion-no">I do not authorize to publish email</label>
+          </div>
+          <div class="container__form__item showen">
+            <label for="sesolicita">Service:</label>
+            <select name="sesolicita" class="container__form__item__input">
+              <option value="fnarreglos1">Repairs-Masonry</option>
+              <option value="fnarreglos2">Repairs-Carpentry</option>                
+              <option value="fnarreglos3">Repairs-Gas</option>
+              <option value="fnarreglos4">Repairs-Electricidad</option>
+              <option value="fnarreglos5">Repairs-Painting</option>
+              <option value="fnarreglos6">Repairs-Plumbing</option>
+              <option value="fnarreglos7">Repairs-Gutters</option>
+              <option value="fnarreglos8">Repairs-other</option>
+              <option value="fncuidados1">Attendance-Seniors</option>
+              <option value="fncuidados2">Attendance-Baby Sitting</option>
+              <option value="fncuidados3">Attendance-Nursing</option>
+              <option value="fncuidados4">Attendance-Kinesiology</option>
+              <option value="fneducacion1">Education-Private Tuition</option>
+              <option value="fneducacion2">Education-Exam Preparations</option>
+              <option value="fneducacion3">Education-other</option>
+              <option value="fnestetica1">Aesthetics-Massages</option>
+              <option value="fnestetica2">Aesthetics-Make up special events</option>
+              <option value="fnestetica3">Aesthetics-Manicure</option>
+              <option value="fnestetica4">Aesthetics-Pedicure</option>
+              <option value="fnestetica5">Aesthetics-other</option>
+              <option value="fnservicios1">Services-Gardening</option>
+              <option value="fnservicios2">Services-Cleaning</option>
+              <option value="fnservicios3">Services-other</option>
+            </select>
+          </div>
+          <div class="container__form__descripcion showen">
+			       <label for="descripcion">Description</label>
+		  </div>
+		  <div class="container__form__descripcion showen"	 > 
+			       <textarea name="descripcion" rows=10 cols=60></textarea>
+          </div>
+          <div class="container__form__botones showen">
+            <input class="container__form__botones__reset" type="reset" value="Clean Form">
+            <input class="container__form__botones__submit" type="submit" value="Send">
+          </div>  
+          <div class="container__form__item showpt">
+            <label for="nombre">ID do usuário:</label>
+            <input type="text" name="nombre" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showpt">
+            <label for="pais">Pais:</label>
+            <input type="text" id="p-pais" name="pais" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showpt">
+            <label for="distrito">Distrito:</label>
+            <input type="text" name="distrito" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showpt">
+            <label for="telefono">Telefone:</label>
+            <input type="text" name="telefono" class="container__form__item__input">
+          </div>
+          <div class="container__form__item showpt">
+            <input type="radio" name="informacion" value="Quiero recibir newsletter mensual" >
+            <label for="informacion-si">Eu autorizo ​​a publicação de email</label>
+            <input type="radio" name="informacion" value="No quiero recibir newsletter mensual">
+            <label for="informacion-no">Eu não autorizo ​​a publicação de email</label>
+          </div>
+          <div class="container__form__item showpt">
+            <label for="sesolicita">Serviço:</label>
+            <select name="sesolicita" id="fnservicios" class="container__form__item__input">
+              <option value="fnarreglos1">Reparos-Alvenaria</option>
+              <option value="fnarreglos2">Reparos-Carpintaria</option>                
+              <option value="fnarreglos3">Reparos-Gas</option>
+              <option value="fnarreglos4">Reparos-Electricidade</option>
+              <option value="fnarreglos5">Reparos-Pintura</option>
+              <option value="fnarreglos6">Reparos-Plomería</option>
+              <option value="fnarreglos7">Reparos-Canalones</option>
+              <option value="fnarreglos8">Reparos-outros</option>
+              <option value="fncuidados1">Atenção-Idosos</option>
+              <option value="fncuidados2">Atenção-Baby Sitting</option>
+              <option value="fncuidados3">Atenção-Enfermagem</option>
+              <option value="fncuidados4">Atenção-Cinesiologia</option>
+              <option value="fneducacion1">Educação-Aulas particulares</option>
+              <option value="fneducacion2">Educação-Preparação exames</option>
+              <option value="fneducacion3">Educação-outros</option>
+              <option value="fnestetica1">Estética-Massagens</option>
+              <option value="fnestetica2">Estética-Maquiagem eventos especiais</option>
+              <option value="fnestetica3">Estética-Manicure</option>
+              <option value="fnestetica4">Estética-Pedicure</option>
+              <option value="fnestetica5">Estética-outros</option>
+              <option value="fnservicios1">Serviços-Jardinagem</option>
+              <option value="fnservicios2">Serviços-Limpeza</option>
+              <option value="fnservicios3">Serviços-outros</option>
+            </select>
+          </div>
+          <div class="container__form__descripcion showpt">
+			       <label for="descripcion">Descrição</label>
+		  </div>
+		  <div class="container__form__descripcion showpt"	 > 
+			       <textarea name="descripcion" rows=10 cols=60></textarea>
+          </div>
+          <div class="container__form__botones showpt">
+            <input class="container__form__botones__reset" type="reset" value="Limpar formulário">
+            <input class="container__form__botones__submit" type="submit" value="Mandar">
+          </div>  
+        </form> 
+    </div>
+
+	<div id="login" class="w3-modal w3-transparent w3-auto w3-text-indigo" >
+		<div class="w3-modal-content" id="login">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-container">
+						<span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+						<div class=container>
+							<form class="showes" class="container__form" action="/" id="formulario-login" method="POST">
+							  <div class="container__form__item" class="w3-input">
+								<label for="email">Dirección de E-mail:</label>
+								<input type="email" id="email" name="email" class="container__form__item__input">
+							  </div>
+							  <div class="container__form__item" class="w3-input">
+								<label for="pwd">Contraseña:</label>
+								<input type="password" id="pwd" name="pwd" class="container__form__item__input">
+							  </div>
+							  <div class="container__form__item">
+								<input type="checkbox" id="opcion1" name="opcion1" value="remember">
+								<label for="opcion1"> Recuerdeme</label>
+							  </div>
+							  <div class=container__form__item>
+								<p>Olvidé mi contraseña  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+								<p>Recibirás un correo electrónico con instrucciones para generar una nueva contraseña</p>
+							  </div>
+							  <div class="container__form__botones">
+								<input class="container__form__botones__reset" type="reset" value="Limpiar formulario">
+								<input class="container__form__botones__submit" type="submit" value="Enviar">
+							  </div>
+							</form>
+							<form class="showen" class="container__form" action="/" id="formulario-login" method="POST">
+								<div class="container__form__item" class="w3-input">
+								  <label for="email">Email Address:</label>
+								  <input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+								  <label for="pwd">Password:</label>
+								  <input type="password" id="pwd" name="pwd" class="container__form__item__input">
+								</div>
+								<div class="container__form__item">
+								  <input type="checkbox" id="opcion1" name="opcion1" value="remember">
+								  <label for="opcion1">Remember me</label>
+								</div>
+								<div class=container__form__item>
+								  <p>I forgot my password  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+								  <p>You will receive an email with instructions to generate a new password</p>
+								</div>
+								<div class="container__form__botones">
+								  <input class="container__form__botones__reset" type="reset" value="Clean form">
+								  <input class="container__form__botones__submit" type="submit" value="Send">
+								</div>
+							  </form>
+							  <form class="showpt" class="container__form" action="/" id="formulario-login" method="POST">
+								<div class="container__form__item" class="w3-input">
+								  <label for="email">Endereço de e-mail:</label>
+								  <input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+								  <label for="pwd">Senha:</label>
+								  <input type="password" id="pwd" name="pwd" class="container__form__item__input">
+								</div>
+								<div class="container__form__item">
+								  <input type="checkbox" id="opcion1" name="opcion1" value="remember">
+								  <label for="opcion1">Lembre de mim</label>
+								</div>
+								<div class=container__form__item>
+								  <p>Esqueci a minha senha  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+								  <p>Você receberá um e-mail com instruções para gerar uma nova senha</p>
+								</div>
+								<div class="container__form__botones">
+								  <input class="container__form__botones__reset" type="reset" value="Limpar o formulário">
+								  <input class="container__form__botones__submit" type="submit" value="Mandar">
+								</div>
+							  </form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="register" class="w3-modal w3-auto w3-transparent w3-text-indigo" >
+		<div class="w3-modal-content" id="register">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-container">
+						<span onclick="document.getElementById('register').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+						<div class=container>
+							<form class="showes" class="container__form" action="/" id="formulario-register" method="POST">
+								<div class="container__form__item" class="w3-input">
+									<label for="email">Dirección de E-mail:</label>
+									<input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd1">Contraseña:</label>
+									<input type="password" id="pwd1" name="pwd1" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd">Repetir Contraseña:</label>
+									<input type="password" id="pwd2" name="pwd2" class="container__form__item__input">
+								</div>
+								<div class=container__form__item>
+									<p>Recibirá un correo electrónico con su identificación de usuario</p>
+									<p>Mediante la misma podrá ingresar solicitudes / ofrecimientos</p>
+								</div>
+								<div class="container__form__botones">
+									<input class="container__form__botones__reset" type="reset" value="Limpiar formulario">
+									<input class="container__form__botones__submit" type="submit" value="Enviar">
+								</div>
+							</form>
+							<form class="showen" class="container__form" action="/" id="formulario-register" method="POST">
+								<div class="container__form__item" class="w3-input">
+									<label for="email">Email Address:</label>
+									<input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd1">Password:</label>
+									<input type="password" id="pwd1" name="pwd1" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd">Re-enter password:</label>
+									<input type="password" id="pwd2" name="pwd2" class="container__form__item__input">
+								</div>
+								<div class=container__form__item>
+									<p>You will receive an email with your user ID</p>
+									<p>You need the user id to enter your requests or offers</p>
+								</div>
+								<div class="container__form__botones">
+									<input class="container__form__botones__reset" type="reset" value="Clean form">
+									<input class="container__form__botones__submit" type="submit" value="Send">
+								</div>
+							</form>
+							<form class="showpt" class="container__form" action="/" id="formulario-register" method="POST">
+								<div class="container__form__item" class="w3-input">
+									<label for="email">Endereço de e-mail:</label>
+									<input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd1">Senha:</label>
+									<input type="password" id="pwd1" name="pwd1" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd">Digite novamente a senha:</label>
+									<input type="password" id="pwd2" name="pwd2" class="container__form__item__input">
+								</div>
+								<div class=container__form__item>
+									<p>Você receberá um e-mail com seu ID de usuário</p>
+									<p>Você precisa do ID do usuário para inserir solicitações ou ofertas</p>
+								</div>
+								<div class="container__form__botones">
+									<input class="container__form__botones__reset" type="reset" value="Limpar o formulário">
+									<input class="container__form__botones__submit" type="submit" value="Mandar">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			  </div>
+		</div>
+	</div>
+
+	<div id="idioma" class="w3-modal w3-auto w3-transparent w3-text-indigo" >
+		<div class="w3-modal-content" id="idioma">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-container">
+						<span onclick="document.getElementById('idioma').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+						<!--aqui inserto selextor de idiomas-->
+						<div class=container>
+							<form class="container__form" type="" action = "/" id="formulario-selector-idiomas">
+								<div class="container__form__item showes" >
+									<label for="elige-idioma">Idioma?</label>
+									<button onclick="myloades()" type="button" class="container__form__item__input">Español</button>
+									<button onclick="myloaden()" type="button" class="container__form__item__input">Inglés</button>
+									<button onclick="myloadpt()" type="button" class="container__form__item__input">Portugés</button>
+								</div>
+							</form>
+							<form class="container__form showen" type="" action = "/" id="formulario-selector-idiomas">
+								<div class="container__form__item" >
+									<label for="elige-idioma">Idioma?</label>
+									<button onclick="myloades()" type="button" class="container__form__item__input">Spanish</button>
+									<button onclick="myloaden()" type="button" class="container__form__item__input">English</button>
+									<button onclick="myloadpt()" type="button" class="container__form__item__input">Portuguese</button>
+								</div>
+							</form>
+							<form class="container__form showpt" type="" action = "/" id="formulario-selector-idiomas">
+								<div class="container__form__item" >
+									<label for="elige-idioma">Idioma?</label>
+									<button onclick="myloades()" type="button" class="container__form__item__input">Espanhol</button>
+									<button onclick="myloaden()" type="button" class="container__form__item__input">Inglês</button>
+									<button onclick="myloadpt()" type="button" class="container__form__item__input">Português</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+	<footer class="item4">
+		<p class="showes">Autor: Emma Ines Wahnish</p>
+		<p class="showen">Author: Emma Ines Wahnish</p>
+		<p class="showpt">Autor: Emma Ines Wahnish</p>
+	  	<p>Soporte: <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+	</footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <script>
+	function myloades(){
+		$(".showpt").hide();
+		$(".showen").hide();
+		$(".showes").show();
+	}
+
+	function myloaden(){
+		$(".showen").show();
+		$(".showpt").hide();
+		$(".showes").hide();
+	}
+
+	function myloadpt() {
+		$(".showen").hide();
+		$(".showpt").show();
+		$(".showes").hide();
+	}					
+</script>
+
+</body>
+
+</html>

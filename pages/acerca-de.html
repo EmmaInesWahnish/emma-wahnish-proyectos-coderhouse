@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"  charset="UTF-8">
+	<title>Acerca de nosotros</title>
+	<!--W3 modal style-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!--mcss/main.cc contiene estilos-->
+	<link rel="stylesheet" href="../css/main.css"/>
+	<!--Utilización de Google fonts Open Sans-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body onload="myloades()">
+	<div class="grid-stat">
+	<header class="super-grid__item1 item1">
+		<nav class="super-grid__item1__nav" style="width:100%">
+			<ul class="padre">
+				<li class="showes"><a href="#">Listados</a>
+					<ul>
+						<li><a href="../pages/listado-de-pedidos.html">Pedidos</a></li>
+						<li><a href="../pages/listado-de-ofrecimientos.html">Ofrecimientos</a></li>
+					</ul>
+				</li>
+				<li class="showes"><a href="../pages/estadisticas-de-pedidos.html">Estadísticas</a></li>
+				<li class="showes"><a href="#">Evaluaciones</a>
+					<ul>
+						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Evaluación Solicitante</a></li>
+						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Evaluación Oferente</a></li>
+					</ul>
+				</li>
+				<li class="showes"><a href="#">Iniciar Sesion</a>
+					<ul>
+						<li style="width:100%">
+							<a onclick="document.getElementById('login').style.display='block'">
+								INICIAR SESIÓN
+							</a>		
+						</li>
+						<li style="width:100%">
+							<a onclick="document.getElementById('register').style.display='block'">
+								REGISTRARSE
+							</a>		
+						</li>
+					</ul>
+				</li>
+				<li class="showes"><a href="../pages/acerca-de.html">Acerca de:</a></li>
+				<li class="showes"><a href="../pages/contact-us.html">Contáctenos</a></li>
+			</ul>	
+		</nav>
+
+		<nav class="super-grid__item1__nav" style="width:100%">
+			<ul class="padre">
+				<li class="showen"><a href="#">Listings</a>
+					<ul>
+						<li><a href="../pages/listado-de-pedidos.html">Requests listing</a></li>
+						<li><a href="../pages/listado-de-ofrecimientos.html">Offers listing</a></li>
+					</ul>
+				</li>
+				<li class="showen"><a href="../pages/estadisticas-de-pedidos.html">Statistics</a></li>
+				<li class="showen"><a href="#">Evaluations</a>
+					<ul>
+						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Requestor Evaluation</a></li>
+						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Supplier Evaluation</a></li>
+					</ul>
+				</li>
+				<li class="showen"><a href="#">Login/Register</a>
+					<ul>
+						<li style="width:100%">
+							<a onclick="document.getElementById('login').style.display='block'">
+								LOGIN
+							</a>		
+						</li>
+						<li style="width:100%">
+							<a onclick="document.getElementById('register').style.display='block'">
+								REGISTER
+							</a>		
+						</li>
+					</ul>
+				</li>
+				<li class="showen"><a href="../pages/acerca-de.html">About us:</a></li>
+				<li class="showen"><a href="../pages/contact-us.html">Contact us</a></li>
+			</ul>	
+		</nav>
+
+		<nav class="super-grid__item1__nav" style="width:100%">
+			<ul class="padre">
+				<li class="showpt"><a href="#">Listagens</a>
+					<ul>
+						<li><a href="../pages/listado-de-pedidos.html">Lista de solicitações</a></li>
+						<li><a href="../pages/listado-de-ofrecimientos.html">Lista de oferecimentos</a></li>
+					</ul>
+				</li>
+				<li class="showpt"><a href="../pages/estadisticas-de-pedidos.html">Estatisticas</a></li>
+				<li class="showpt"><a href="#">Avaliações</a>
+					<ul>
+						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Avaliação do solicitante</a></li>
+						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Avaliação do fornecedor</a></li>
+					</ul>
+				</li>
+				<li class="showpt"><a href="#">Login/Registro</a>
+					<ul>
+						<li style="width:100%">
+							<a onclick="document.getElementById('login').style.display='block'">
+								Inicio de Sessão
+							</a>		
+						</li>
+						<li style="width:100%">
+							<a onclick="document.getElementById('register').style.display='block'">
+								REGISTRO
+							</a>		
+						</li>
+					</ul>
+				</li>
+				<li class="showpt"><a href="../pages/acerca-de.html">Sobre nós:</a></li>
+				<li class="showpt"><a href="../pages/contact-us.html">Contate-Nos</a></li>
+			</ul>	
+		</nav>
+
+		<div class="header-line-1 super-grid__item1__logo item2">
+			<img class="header-line-1__image" src="../images/handshake.png" alt="Conectando personas logo"/> <!--- Aqui va el logo --->
+			<h2 class="header-line-1__title showes">Conectando personas</h2>
+			<h2 class="header-line-1__title showen">Connecting people</h2>
+			<h2 class="header-line-1__title showpt">Conectando pessoas</h2>				
+			<img id="el-idioma" class="header-line-1__idioma" src="../images/language.png" alt="Idioma" onclick="document.getElementById('idioma').style.display='block'" />
+			<a class="header-line-1__exit" href="../index.html" ><img src="../images/icono-exit.png" alt="Icono Exit" /></a>
+		</div>	
+	</header>
+
+	<div class="about item3">
+		<div class="about-container">
+			<div class="about-container__item">
+				<img src="../images/handshake-technology.jpg" alt="Vínculo a través de la tecnología"/></a>
+			</div>	
+			<div class="about-container__item" >
+				<div class="about-container__item__info">
+					<h2 class="showes">Nuestro Objetivo Principal</h2>
+					<p class="showes" class="about-container__item__overlay__text">
+						Queremos conectar a las personas para que a través de la tecnología puedan vincularse.
+						 De esta manera, quienes precisan algún servicio podrán publicarlo a fin de que sea atendido.
+						  Asimismo, personas que trabajan por cuenta propia como por ejemplo maestras particulares, plomeros, jardineros, etc. podrán publicar sus ofrecimientos y referencias.
+						  Una vez establecido el vínculo y brindado el servicio, oferentes y solicitantes se evaluaran mutuamente para facilitar la elección de otros solicitantes y oferentes.
+						   Tanto oferentes como solicitantes podrán acceder a nuestra base de datos para consultar pedidos, ofrecimientos y estadísticas. 
+					</p>
+					<h2 class="showen">Our main aim</h2>
+					<p class="showen" class="about-container__item__overlay__text">
+						We want to connect people so that through technology they can become acquainted.
+						In this way, those who need a service will be able to publish it so that their requirement can be attended to.
+						Also, people who are self-employed such as private teachers, plumbers, gardeners, etc.; will be able to publish their offers and references.
+						Once the link between supply and demand is established and the service has been provided, suppliers and requesters will evaluate each other to facilitate the choice of other requesters and suppliers.
+						Both suppliers and requesters will have access our database to consult orders, offers and statistics. 
+					</p>
+					<h2 class="showpt">Nosso objetivo principal</h2>
+					<p class="showpt" class="about-container__item__overlay__text">
+						Queremos conectar as pessoas para que, por meio da tecnologia, elas possam se conhecer.
+						Dessa forma, quem precisar de um serviço poderá publicá-lo para que sua solicitação seja atendida.
+						Além disso, pessoas que trabalham por conta própria, como professores particulares, encanadores, jardineiros, etc., poderão publicar suas ofertas e referências.
+						Uma vez que o vínculo entre oferta e demanda seja estabelecido e o serviço tenha sido prestado, fornecedores e solicitantes avaliarão uns aos outros para facilitar a escolha de outros solicitantes e fornecedores.
+						Tanto fornecedores como solicitantes terão acesso ao nosso banco de dados para consultar pedidos, ofertas e estatísticas. 
+					</p>						
+				</div>	
+			</div>
+		</div>
+        <table class="showes">
+   	        <tr>
+                <th>Opción de Menu</th>
+                <th>Explicación</th>
+				<th>Beneficios</th>
+                <th>Link</th>
+            </tr>
+	           <tr>
+                <td>
+					Listado de pedidos
+				</td>
+                <td>
+					<p>Permite acceder a la lista de pedidos para ver aquellos que han sido resueltos y aquellos que están pendientes de resolución</p>
+				</td>
+                <td>
+					<ol>
+						<li>Conocer qué pedidos ya han sido resueltos</li>
+						<li>Conocer qué pedidos continúan pendientes</li>
+					</ol>
+				</td>
+				<td>
+					<a href="listado-de-pedidos.html" target="_blank">Listado de pedidos</a>
+                </td>
+			</tr>
+			<tr>
+                <td>
+					Listado de ofrecimientos
+				</td>
+                <td>
+					<p>Permite acceder a la lista de ofrecimientos para ver la evaluación que han recibido los oferentes a fin de facilitar la contratación de un servicio</p>
+				</td>
+                <td>
+					<ol>
+						<li>Buscar oferentes que puedan atender un servicio determinado</li>
+						<li>Conocer la evaluación que otros solicitantes han efectuado del oferente</li>
+					</ol>
+				</td>
+				<td>
+					<a href="listado-de-ofrecimientos.html" target="_blank">Listado de ofrecimientos</a>
+                </td>
+			</tr>
+			<tr>
+                <td>
+					Estadísticas de pedidos
+				</td>
+                <td>
+					<p>Permite acceder a las estadísticas de pedidos</p>
+					<ul>
+						<li>Las estadísticas contienen datos acerca de aquellos pedidos que fueron resueltos en forma muy satisfactoria, satisfactoria o poco satisfactoria</li>
+						<li>Adicionalmente se podrá consultar la cantidad de pedidos aún no resueltos por rubro</li>
+					</ul>				
+				</td>
+                <td>
+					<ol>
+						<li>Evaluar la eficacia en la atención de pedidos</li>
+						<li>Evaluar la calidad en la atención de pedidos</li>
+					</ol>
+				</td>
+				<td>
+					<a href="estadisticas-de-pedidos.html" target="_blank">Estadísticas de pedidos</a>
+                </td>
+			</tr>
+			<tr>
+                <td>
+					Evaluación solicitantes
+				</td>
+                <td>
+					<p>Ante un pedido resuelto, el oferente deberá evaluar a su solicitante: 
+						<ul>
+							<li>trato cordial o no</li>
+							<li>cumplimiento de acuerdos o no</li>
+							<li>pago de servicios en tiempo y forma o no</li>
+						</ul>
+					</p>
+				</td>
+                <td>
+					<ol>
+						<li>Permitir a otros oferentes aceptar o no la realización de un servicio</li>
+						<li>Permitir a los solicitantes conocer la evaluación que su oferente les ha hecho para tenerla en cuenta</li>
+					</ol>
+				</td>
+				<td>
+					<p>Este link solo estará disponible para el oferente que haya realizado un servicio</p>
+                </td>
+			</tr>
+			<tr>
+                <td>
+					Evaluación oferentes
+				</td>
+                <td>
+					<p>Ante un pedido resuelto, el solicitante deberá evaluar a su oferente:</p>
+					<ul>
+						<li>trato cordial o no</li>
+						<li>cumplimiento de acuerdos o no</li>
+						<li>servicios brindados en tiempo y forma o no</li>
+					</ul>
+				</td>
+               	<td>
+					<ol>
+						<li>Permitir a otros solicitantes contratar o no los servicios de un oferente</li>
+						<li>Permitir a los oferentes conocer la evaluación que su solicitante les ha hecho para tenerla en cuenta</li>
+					</ol>
+				</td>
+				<td>
+					<p>Este link solo estará disponible para el solicitante que haya recibido un servicio</p>
+                </td>
+			</tr>
+		</table>
+        <table class="showen">
+			<tr>
+				 <th>Menu option</th>
+				 <th>Explanation</th>
+				 <th>Benefits</th>
+				 <th>Link</th>
+			</tr>
+			<tr>
+				<td>
+					Requests listing
+				</td>
+				<td>
+					<p>Allows access to the list of orders to see those that have been attended to and those that have not</p>
+				</td>
+				<td>
+					<ol>
+						<li>Know which requests have already been resolved</li>
+						<li>Know which requests are still pending</li>
+					</ol>
+			 	</td>
+			 	<td>
+					<a href="listado-de-pedidos.html" target="_blank">Requests listing</a>
+			 	</td>
+		 	</tr>
+			<tr>
+				<td>
+					Offers listing
+			 	</td>
+				<td>
+					<p>Allows access to the offers listing to see the evaluation that the suppliers have received, in order to facilitate the contracting of a service</p>
+			 	</td>
+				<td>
+					<ol>
+						<li>Search for suppliers who can attend a specific service</li>
+						<li>Know the evaluation that other requestors have made of the supplier</li>
+				 	</ol>
+				</td>
+				<td>
+					<a href="listado-de-ofrecimientos.html" target="_blank">Offers listing</a>
+				 </td>
+			</tr>
+			<tr>
+			<td>
+				Statistics
+			</td>
+			<td>
+				<p>Allows access to requests statistics</p>
+				<ul>
+					<li>The statistics contain data about those requests that were resolved in a very satisfactory, satisfactory or unsatisfactory way</li>
+					<li>Additionally, you can check the number of requests not yet resolved by item</li>
+				</ul>				
+			</td>
+			<td>
+				<ol>
+					<li>Evaluate the effectiveness in resolving requests</li>
+					<li>Evaluate the quality in the resolution of requests</li>
+				</ol>
+			</td>
+			<td>
+				<a href="estadisticas-de-pedidos.html" target="_blank">Statistics</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Requestor Evaluation
+			</td>
+			<td>
+				<p>Faced with a resolved request, the supplier must evaluate his requestor:</p>>
+				<ul>
+					<li>cordial treatment or not</li>
+					<li>fulfillment of agreements or not</li>
+					<li>payment of services in a timely manner or not</li>
+				</ul>
+			 </td>
+			 <td>
+				<ol>
+					<li>Allow other suppliers to accept or not the performance of a service</li>
+					<li>Allow solicitants to know the evaluation that their supplier has made them to take it into account</li>
+				</ol>
+			 </td>
+			 <td>
+				<p>This link will only be available to the supplier who has performed a service</p>
+			 </td>
+		 </tr>
+		 <tr>
+			<td>
+				Supplier evaluation
+			</td>
+			<td>
+				<p>Faced with a resolved request, the requestor must evaluate his supplier:</p>
+				<ul>
+					<li>cordial treatment or not</li>
+					<li>fulfillment of agreements or not</li>
+					<li>services provided in a timely manner or not</li>
+				</ul>
+			</td>
+			<td>
+				<ol>
+					<li>Allow other solicitants to contract or not the services of a supplier</li>
+					<li>Allow suppliers to know the evaluation that their solicitant has made them to take it into account</li>
+				</ol>
+			</td>
+			<td>
+				<p>This link will only be available to the solicitant who has received a service</p>
+			</td>
+		</tr>
+	</table>
+	<table class="showpt">
+		<tr>
+			<th>Opção de menu</th>
+			<th>Explicação</th>
+			<th>Benefícios</th>
+			<th>Link</th>
+		</tr>
+		<tr>
+		<td>
+			Lista de solicitações
+		</td>
+		<td>
+			<p>Permite o acesso à lista de solicitações para ver as que foram atendidas e as que não foram</p>
+		</td>
+		<td>
+			<ol>
+				<li>Saber quais solicitações foram resolvidas</li>
+				<li>Saber quais solicitações ainda estão pendentes</li>
+			</ol>
+		</td>
+		<td>
+			<a href="listado-de-pedidos.html" target="_blank">Lista de solicitações</a>
+		</td>
+		</tr>
+		<tr>
+		<td>
+			Lista de oferecimentos
+		</td>
+		<td>
+			<p>Permite aceder à lista de oferecimentos para consultar a avaliação que os fornecedores receberam para facilitar a contratação de um serviço</p>
+		</td>
+		<td>
+			<ol>
+				<li>Procurar fornecedores que possam oferecer um serviço específico</li>
+				<li>Conheçer a avaliação que outros solicitantes fizeram do fornecedor</li>
+			</ol>
+		</td>
+		<td>
+			<a href="listado-de-ofrecimientos.html" target="_blank">Lista de oferecimentos</a>
+		</td>
+		</tr>
+		<tr>	
+		<td>
+			Estatísticas
+		</td>
+		<td>
+			<p>Permite acesso a estatísticas de pedidos</p>
+			<ul>
+				<li>As estatísticas contêm dados sobre aquelas solicitações que foram resolvidas de forma muito satisfatória, satisfatória ou insatisfatória</li>
+				<li>Além disso, você pode verificar o número de solicitações ainda não resolvidas por item</li>
+			</ul>				
+		</td>
+		<td>
+			<ol>
+				<li>Avaliar a eficácia na resolução de solicitações</li>
+				<li>Avaliar a qualidade na resolução das solicitações</li>
+			</ol>
+		</td>
+		<td>
+			<a href="estadisticas-de-pedidos.html" target="_blank">Estatísticas</a>
+		</td>
+	 	</tr>
+	 	<tr>
+		<td>
+			Avaliação do solicitante
+		</td>
+		<td>
+			<p>Diante de uma solicitação resolvida, o fornecedor deve avaliar seu solicitante:</p> 
+			<ul>
+				<li>tratamento cordial ou não</li>
+				<li>cumprimento de acordos ou não</li>
+				<li>pagamento de serviços em tempo hábil ou não</li>
+			</ul>
+		</td>
+		<td>
+			<ol>
+				<li>Permitir que outros fornecedores aceitem ou não a execução de um serviço</li>
+				<li>Permitir que os solicitantes conheçam a avaliação que seu fornecedor fez para que eles levem em consideração</li>
+			</ol>
+		</td>
+		<td>
+			<p>Este link só estará disponível para o fornecedor que realizou um serviço</p>
+		</td>
+		</tr>
+		<tr>
+			<td>
+				Avaliação do fornecedor
+			</td>
+			<td>
+				<p>Diante de uma solicitação resolvida, o solicitante deve avaliar seu fornecedor:</p>
+				<ul>
+					<li>tratamento cordial ou não</li>
+					<li>cumprimento de acordos ou não</li>
+					<li>serviços prestados em tempo hábil ou não</li>
+				</ul>
+			</td>
+			<td>
+				<ol>
+					<li>Permitir que outros solicitantes contratem ou não os serviços de um fornecedor</li>
+					<li>Permitir que os fornecedores saibam a avaliação que seu solicitante fez para levá-la em consideração</li>
+				</ol>
+			</td>
+			<td>
+				<p>Este link só estará disponível para o solicitante que recebeu um serviço</p>
+			</td>
+		</tr>
+	</table>
+	</div>
+
+	<div id="login" class="w3-modal w3-transparent w3-auto w3-text-indigo" >
+		<div class="w3-modal-content" id="login">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-container">
+						<span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-display-topright">&times;</span>					
+						<div class=container>
+							<form class="showes" class="container__form" action="/" id="formulario-login" method="POST">
+							  <div class="container__form__item" class="w3-input">
+								<label for="email">Dirección de E-mail:</label>
+								<input type="email" id="email" name="email" class="container__form__item__input">
+							  </div>
+							  <div class="container__form__item" class="w3-input">
+								<label for="pwd">Contraseña:</label>
+								<input type="password" id="pwd" name="pwd" class="container__form__item__input">
+							  </div>
+							  <div class="container__form__item">
+								<input type="checkbox" id="opcion1" name="opcion1" value="remember">
+								<label for="opcion1"> Recuerdeme</label>
+							  </div>
+							  <div class=container__form__item>
+								<p>Olvidé mi contraseña  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+								<p>Recibirás un correo electrónico con instrucciones para generar una nueva contraseña</p>
+							  </div>
+							  <div class="container__form__botones">
+								<input class="container__form__botones__reset" type="reset" value="Limpiar formulario">
+								<input class="container__form__botones__submit" type="submit" value="Enviar">
+							  </div>  
+							</form>
+							<form class="showen" class="container__form" action="/" id="formulario-login" method="POST">
+								<div class="container__form__item" class="w3-input">
+								  <label for="email">Email Address:</label>
+								  <input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+								  <label for="pwd">Password:</label>
+								  <input type="password" id="pwd" name="pwd" class="container__form__item__input">
+								</div>
+								<div class="container__form__item">
+								  <input type="checkbox" id="opcion1" name="opcion1" value="remember">
+								  <label for="opcion1">Remember me</label>
+								</div>
+								<div class=container__form__item>
+								  <p>I forgot my password  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+								  <p>You will receive an email with instructions to generate a new password</p>
+								</div>
+								<div class="container__form__botones">
+								  <input class="container__form__botones__reset" type="reset" value="Clean form">
+								  <input class="container__form__botones__submit" type="submit" value="Send">
+								</div>  
+							  </form>								 
+							  <form class="showpt" class="container__form" action="/" id="formulario-login" method="POST">
+								<div class="container__form__item" class="w3-input">
+								  <label for="email">Endereço de e-mail:</label>
+								  <input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+								  <label for="pwd">Senha:</label>
+								  <input type="password" id="pwd" name="pwd" class="container__form__item__input">
+								</div>
+								<div class="container__form__item">
+								  <input type="checkbox" id="opcion1" name="opcion1" value="remember">
+								  <label for="opcion1">Lembre de mim</label>
+								</div>
+								<div class=container__form__item>
+								  <p>Esqueci a minha senha  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+								  <p>Você receberá um e-mail com instruções para gerar uma nova senha</p>
+								</div>
+								<div class="container__form__botones">
+								  <input class="container__form__botones__reset" type="reset" value="Limpar o formulário">
+								  <input class="container__form__botones__submit" type="submit" value="Mandar">
+								</div>  
+							  </form>								 	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="register" class="w3-modal w3-auto w3-transparent w3-text-indigo" >
+		<div class="w3-modal-content" id="register">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-container">
+						<span onclick="document.getElementById('register').style.display='none'" class="w3-button w3-display-topright">&times;</span>					
+						<div class=container>
+							<form class="showes" class="container__form" action="/" id="formulario-register" method="POST">
+								<div class="container__form__item" class="w3-input">
+									<label for="email">Dirección de E-mail:</label>
+									<input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd1">Contraseña:</label>
+									<input type="password" id="pwd1" name="pwd1" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd">Repetir Contraseña:</label>
+									<input type="password" id="pwd2" name="pwd2" class="container__form__item__input">
+								</div>
+								<div class=container__form__item>
+									<p>Recibirá un correo electrónico con su identificación de usuario</p>
+									<p>Mediante la misma podrá ingresar solicitudes / ofrecimientos</p>
+								</div>
+								<div class="container__form__botones">
+									<input class="container__form__botones__reset" type="reset" value="Limpiar formulario">
+									<input class="container__form__botones__submit" type="submit" value="Enviar">
+								</div>  
+							</form>
+							<form class="showen" class="container__form" action="/" id="formulario-register" method="POST">
+								<div class="container__form__item" class="w3-input">
+									<label for="email">Email Address:</label>
+									<input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd1">Password:</label>
+									<input type="password" id="pwd1" name="pwd1" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd">Re-enter password:</label>
+									<input type="password" id="pwd2" name="pwd2" class="container__form__item__input">
+								</div>
+								<div class=container__form__item>
+									<p>You will receive an email with your user ID</p>
+									<p>You need the user id to enter your requests or offers</p>
+								</div>
+								<div class="container__form__botones">
+									<input class="container__form__botones__reset" type="reset" value="Clean form">
+									<input class="container__form__botones__submit" type="submit" value="Send">
+								</div>  
+							</form>
+							<form class="showpt" class="container__form" action="/" id="formulario-register" method="POST">
+								<div class="container__form__item" class="w3-input">
+									<label for="email">Endereço de e-mail:</label>
+									<input type="email" id="email" name="email" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd1">Senha:</label>
+									<input type="password" id="pwd1" name="pwd1" class="container__form__item__input">
+								</div>
+								<div class="container__form__item" class="w3-input">
+									<label for="pwd">Digite novamente a senha:</label>
+									<input type="password" id="pwd2" name="pwd2" class="container__form__item__input">
+								</div>
+								<div class=container__form__item>
+									<p>Você receberá um e-mail com seu ID de usuário</p>
+									<p>Você precisa do ID do usuário para inserir solicitações ou ofertas</p>
+								</div>
+								<div class="container__form__botones">
+									<input class="container__form__botones__reset" type="reset" value="Limpar o formulário">
+									<input class="container__form__botones__submit" type="submit" value="Mandar">
+								</div>  
+							</form>
+						</div>	 
+					</div>
+				</div>
+			  </div>
+		</div>
+	</div>
+	
+	<div id="idioma" class="w3-modal w3-auto w3-transparent w3-text-indigo" >
+		<div class="w3-modal-content" id="idioma">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-container">
+						<span onclick="document.getElementById('idioma').style.display='none'" class="w3-button w3-display-topright">&times;</span>					
+						<!--aqui inserto selextor de idiomas-->
+						<div class=container>
+							<form class="container__form" type="" action = "/" id="formulario-selector-idiomas">
+								<div class="container__form__item showes" >
+									<label for="elige-idioma">Idioma?</label>
+									<button onclick="myloades()" type="button" class="container__form__item__input">Español</button>
+									<button onclick="myloaden()" type="button" class="container__form__item__input">Inglés</button>
+									<button onclick="myloadpt()" type="button" class="container__form__item__input">Portugés</button>
+								</div>
+							</form>
+							<form class="container__form showen" type="" action = "/" id="formulario-selector-idiomas">
+								<div class="container__form__item" >
+									<label for="elige-idioma">Idioma?</label>
+									<button onclick="myloades()" type="button" class="container__form__item__input">Spanish</button>
+									<button onclick="myloaden()" type="button" class="container__form__item__input">English</button>
+									<button onclick="myloadpt()" type="button" class="container__form__item__input">Portuguese</button>
+								</div>
+							</form>
+							<form class="container__form showpt" type="" action = "/" id="formulario-selector-idiomas">
+								<div class="container__form__item" >
+									<label for="elige-idioma">Idioma?</label>
+									<button onclick="myloades()" type="button" class="container__form__item__input">Espanhol</button>
+									<button onclick="myloaden()" type="button" class="container__form__item__input">Inglês</button>
+									<button onclick="myloadpt()" type="button" class="container__form__item__input">Português</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="about item4">
+		<p class="showes">Autor: Emma Ines Wahnish</p>
+		<p class="showen">Author: Emma Ines Wahnish</p>
+		<p class="showpt">Autor: Emma Ines Wahnish</p>
+		<p>Soporte: <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+	</footer>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+		function myloades(){
+			$(".showpt").hide();
+			$(".showen").hide();
+			$(".showes").show();
+		}
+
+		function myloaden(){
+			$(".showen").show();
+			$(".showpt").hide();
+			$(".showes").hide();
+		}
+
+		function myloadpt() {
+			$(".showen").hide();
+			$(".showpt").show();
+			$(".showes").hide();
+		}					
+	</script>
+
+</body>
+
+</html>
