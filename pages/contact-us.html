@@ -129,23 +129,60 @@
 
 	<div class="container">
         <form class="container__form" action="/" id="formulario1" method="POST">
-          <div class="container__form__item">
+          <div class="container__form__item showes">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" class="container__form__item__input">
           </div>
-          <div class="container__form__item">
+
+          <div class="container__form__item showen">
+            <label for="nombre">First Name:</label>
+            <input type="text" id="nombre" name="nombre" class="container__form__item__input">
+          </div>
+
+          <div class="container__form__item showpt">
+            <label for="nombre">Nome:</label>
+            <input type="text" id="nombre" name="nombre" class="container__form__item__input">
+          </div>
+
+          <div class="container__form__item showes">
             <label for="apellido">Apellido:</label>
             <input type="text" id="apellido" name="apellido" class="container__form__item__input">
           </div>
-          <div class="container__form__item">
-            <input type="checkbox" id="opcion1" name="opcion1" value="necesito">
+
+          <div class="container__form__item showen">
+            <label for="apellido">Last name:</label>
+            <input type="text" id="apellido" name="apellido" class="container__form__item__input">
+          </div>
+
+          <div class="container__form__item showpt">
+            <label for="apellido">Sobrenome:</label>
+            <input type="text" id="apellido" name="apellido" class="container__form__item__input">
+          </div>
+
+          <div class="container__form__item showes">
+            <input type="checkbox" name="opcion1" value="necesito">
             <label for="opcion1"> Necesito servicios</label>
-            <input type="checkbox" id="opcion2" name="opcion2" value="ofrezco">
+            <input type="checkbox" name="opcion2" value="ofrezco">
             <label for="opcion2">Ofrezco servicios</label>
           </div>
-          <div class="container__form__item">
+
+          <div class="container__form__item showen">
+            <input type="checkbox" name="opcion1" value="necesito">
+            <label for="opcion1">I need services</label>
+            <input type="checkbox" name="opcion2" value="ofrezco">
+            <label for="opcion2">I offer services</label>
+          </div>
+
+          <div class="container__form__item showpt">
+            <input type="checkbox" name="opcion1" value="necesito">
+            <label for="opcion1">Eu preciso de serviços</label>
+            <input type="checkbox" name="opcion2" value="ofrezco">
+            <label for="opcion2">Eu ofereço serviços</label>
+          </div>
+
+          <div class="container__form__item showes">
             <label for="senecesita">Que servicio necesita?:</label>
-            <select name="senecesita" id="nservicios" class="container__form__item__input">
+            <select name="senecesita" class="container__form__item__input">
               <option value="narreglos1">Arreglos-Albañilería</option>
               <option value="narreglos2">Arreglos-Carpintería</option>                
               <option value="narreglos3">Arreglos-Gas</option>
@@ -166,14 +203,73 @@
               <option value="nestetica3">Estética-Manicuría</option>
               <option value="nestetica4">Estética-Pedicuría</option>
               <option value="nestetica5">Estética-otros</option>
-              <option value="nserviciosv1">Servicios-Jardinería</option>
-              <option value="nserviciosv2">Servicios-Limpieza</option>
-              <option value="nsserviciosv3">Servicios-otros</option>
+              <option value="nservicios1">Servicios-Jardinería</option>
+              <option value="nservicios2">Servicios-Limpieza</option>
+              <option value="nsservicios3">Servicios-otros</option>
             </select>
           </div>
-          <div class="container__form__item">
-            <label for="seofrece">Que servicio ofrece?:</label>
-            <select name="seofrece" id="oservicios" class="container__form__item__input">
+
+          <div class="container__form__item showen">
+            <label for="sesolicita">What service do you need?</label>
+            <select name="sesolicita" class="container__form__item__input">
+              <option value="narreglos1">Repairs-Masonry</option>
+              <option value="narreglos2">Repairs-Carpentry</option>                
+              <option value="narreglos3">Repairs-Gas</option>
+              <option value="narreglos4">Repairs-Electricidad</option>
+              <option value="narreglos5">Repairs-Painting</option>
+              <option value="narreglos6">Repairs-Plumbing</option>
+              <option value="narreglos7">Repairs-Gutters</option>
+              <option value="narreglos8">Repairs-other</option>
+              <option value="ncuidados1">Attendance-Seniors</option>
+              <option value="ncuidados2">Attendance-Baby Sitting</option>
+              <option value="ncuidados3">Attendance-Nursing</option>
+              <option value="ncuidados4">Attendance-Kinesiology</option>
+              <option value="neducacion1">Education-Private Tuition</option>
+              <option value="neducacion2">Education-Exam Preparations</option>
+              <option value="neducacion3">Education-other</option>
+              <option value="nestetica1">Aesthetics-Massages</option>
+              <option value="nestetica2">Aesthetics-Make up special events</option>
+              <option value="nestetica3">Aesthetics-Manicure</option>
+              <option value="nestetica4">Aesthetics-Pedicure</option>
+              <option value="nestetica5">Aesthetics-other</option>
+              <option value="nservicios1">Services-Gardening</option>
+              <option value="nservicios2">Services-Cleaning</option>
+              <option value="nservicios3">Services-other</option>
+            </select>
+          </div>
+
+          <div class="container__form__item showpt">
+            <label for="sesolicita">Quais serviços você precisa?</label>
+            <select name="sesolicita" id="fnservicios" class="container__form__item__input">
+              <option value="narreglos1">Reparos-Alvenaria</option>
+              <option value="narreglos2">Reparos-Carpintaria</option>                
+              <option value="narreglos3">Reparos-Gas</option>
+              <option value="narreglos4">Reparos-Electricidade</option>
+              <option value="narreglos5">Reparos-Pintura</option>
+              <option value="narreglos6">Reparos-Plomería</option>
+              <option value="narreglos7">Reparos-Canalones</option>
+              <option value="narreglos8">Reparos-outros</option>
+              <option value="ncuidados1">Atenção-Idosos</option>
+              <option value="ncuidados2">Atenção-Baby Sitting</option>
+              <option value="ncuidados3">Atenção-Enfermagem</option>
+              <option value="ncuidados4">Atenção-Cinesiologia</option>
+              <option value="neducacion1">Educação-Aulas particulares</option>
+              <option value="neducacion2">Educação-Preparação exames</option>
+              <option value="neducacion3">Educação-outros</option>
+              <option value="nestetica1">Estética-Massagens</option>
+              <option value="nestetica2">Estética-Maquiagem eventos especiais</option>
+              <option value="nestetica3">Estética-Manicure</option>
+              <option value="nestetica4">Estética-Pedicure</option>
+              <option value="nestetica5">Estética-outros</option>
+              <option value="nservicios1">Serviços-Jardinagem</option>
+              <option value="nservicios2">Serviços-Limpeza</option>
+              <option value="nservicios3">Serviços-outros</option>
+            </select>
+          </div>
+
+          <div class="container__form__item showes">
+            <label for="seofrece">Que servicio ofrece?</label>
+            <select name="seofrece" class="container__form__item__input">
               <option value="oarreglos1">Arreglos-Albañilería</option>
               <option value="oarreglos2">Arreglos-Carpintería</option>                
               <option value="oarreglos3">Arreglos-Gas</option>
@@ -194,21 +290,106 @@
               <option value="oestetica3">Estética-Manicuría</option>
               <option value="oestetica4">Estética-Pedicuría</option>
               <option value="oestetica5">Estética-otros</option>
-              <option value="oserviciosv1">Servicios-Jardinería</option>
-              <option value="oserviciosv2">Servicios-Limpieza</option>
-              <option value="oserviciosv3">Servicios-otros</option>
+              <option value="oservicios1">Servicios-Jardinería</option>
+              <option value="oservicios2">Servicios-Limpieza</option>
+              <option value="oservicios3">Servicios-otros</option>
             </select>
           </div>
-          <div class="container__form__item">
-            <input type="radio" id="informacion-si" name="informacion" value="Quiero recibir newsletter mensual" >
+
+          <div class="container__form__item showen">
+            <label for="seofrece">What service do you offer?</label>
+              <select name="seofrece" class="container__form__item__input">
+              <option value="oarreglos1">Repairs-Masonry</option>
+              <option value="oarreglos2">Repairs-Carpentry</option>                
+              <option value="oarreglos3">Repairs-Gas</option>
+              <option value="oarreglos4">Repairs-Electricidad</option>
+              <option value="oarreglos5">Repairs-Painting</option>
+              <option value="oarreglos6">Repairs-Plumbing</option>
+              <option value="oarreglos7">Repairs-Gutters</option>
+              <option value="oarreglos8">Repairs-other</option>
+              <option value="ocuidados1">Attendance-Seniors</option>
+              <option value="ocuidados2">Attendance-Baby Sitting</option>
+              <option value="ocuidados3">Attendance-Nursing</option>
+              <option value="ocuidados4">Attendance-Kinesiology</option>
+              <option value="oeducacion1">Education-Private Tuition</option>
+              <option value="oeducacion2">Education-Exam Preparations</option>
+              <option value="oeducacion3">Education-other</option>
+              <option value="oestetica1">Aesthetics-Massages</option>
+              <option value="oestetica2">Aesthetics-Make up special events</option>
+              <option value="oestetica3">Aesthetics-Manicure</option>
+              <option value="oestetica4">Aesthetics-Pedicure</option>
+              <option value="oestetica5">Aesthetics-other</option>
+              <option value="oservicios1">Services-Gardening</option>
+              <option value="oservicios2">Services-Cleaning</option>
+              <option value="oservicios3">Services-other</option>
+            </select>
+          </div>
+      
+          <div class="container__form__item showpt">
+            <label for="seofrece">Quais serviços você oferece?</label>
+            <select name="seofrece" class="container__form__item__input">
+              <option value="oarreglos1">Reparos-Alvenaria</option>
+              <option value="oarreglos2">Reparos-Carpintaria</option>                
+              <option value="oarreglos3">Reparos-Gas</option>
+              <option value="oarreglos4">Reparos-Electricidade</option>
+              <option value="oarreglos5">Reparos-Pintura</option>
+              <option value="oarreglos6">Reparos-Plomería</option>
+              <option value="oarreglos7">Reparos-Canalones</option>
+              <option value="oarreglos8">Reparos-outros</option>
+              <option value="ocuidados1">Atenção-Idosos</option>
+              <option value="ocuidados2">Atenção-Baby Sitting</option>
+              <option value="ocuidados3">Atenção-Enfermagem</option>
+              <option value="ocuidados4">Atenção-Cinesiologia</option>
+              <option value="oeducacion1">Educação-Aulas particulares</option>
+              <option value="oeducacion2">Educação-Preparação exames</option>
+              <option value="oeducacion3">Educação-outros</option>
+              <option value="oestetica1">Estética-Massagens</option>
+              <option value="oestetica2">Estética-Maquiagem eventos especiais</option>
+              <option value="oestetica3">Estética-Manicure</option>
+              <option value="oestetica4">Estética-Pedicure</option>
+              <option value="oestetica5">Estética-outros</option>
+              <option value="oservicios1">Serviços-Jardinagem</option>
+              <option value="oservicios2">Serviços-Limpeza</option>
+              <option value="oservicios3">Serviços-outros</option>
+            </select>
+          </div>
+      
+          <div class="container__form__item showes">
+            <input type="radio" name="informacion" value="Quiero recibir newsletter mensual" >
             <label for="informacion-si">Quiero recibir newsletter mensual</label>
-            <input type="radio" id="informacion-no" name="informacion" value="No quiero recibir newsletter mensual">
+            <input type="radio" name="informacion" value="No quiero recibir newsletter mensual">
             <label for="informacion-no">No quiero recibir newsletter mensual</label>
           </div>
-          <div class="container__form__botones">
+
+          <div class="container__form__item showen">
+            <input type="radio" name="informacion" value="Quiero recibir newsletter mensual" >
+            <label for="informacion-si">I want to receive a monthly newsletter</label>
+            <input type="radio" name="informacion" value="No quiero recibir newsletter mensual">
+            <label for="informacion-no">I do not want to receive a monthly newsletter</label>
+          </div>
+
+          <div class="container__form__item showpt">
+            <input type="radio" name="informacion" value="Quiero recibir newsletter mensual" >
+            <label for="informacion-si">Eu quero receber um boletim informativo mensal</label>
+            <input type="radio" name="informacion" value="No quiero recibir newsletter mensual">
+            <label for="informacion-no">Eu não quero receber um boletim informativo mensal</label>
+          </div>
+
+          <div class="container__form__botones showes">
             <input class="container__form__botones__reset" type="reset" value="Limpiar formulario">
             <input class="container__form__botones__submit" type="submit" value="Enviar">
+          </div>
+          
+          <div class="container__form__botones showen">
+            <input class="container__form__botones__reset" type="reset" value="Clean form">
+            <input class="container__form__botones__submit" type="submit" value="Send">
           </div>  
+
+          <div class="container__form__botones showpt">
+            <input class="container__form__botones__reset" type="reset" value="Limpar formulário">
+            <input class="container__form__botones__submit" type="submit" value="Mandar">
+          </div>  
+          
         </form> 
     </div>
 
