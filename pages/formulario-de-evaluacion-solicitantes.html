@@ -130,11 +130,11 @@
 
 	<div class="container item3">
     	<form class="container__form" action="/" id="formulario-evaluacion-solicitante" method="POST">
-        	<div class="container__form__item">
+        	<div class="container__form__item showes">
         	    <label for="nombre">Identificación de Usuario:</label>
             	<input type="text" id="o-nombre" name="nombre" class="container__form__item__input">
           	</div>
-			  <div class="container__form__item">
+			  <div class="container__form__item showes">
             	<label for="senecesita">Servicio:</label>
     	        <select name="senecesita" id="fsservicios" class="container__form__item__input">
     	          <option value="fsarreglos1">Arreglos-Albañilería</option>
@@ -162,28 +162,35 @@
             	  <option value="fsserviciosv3">Servicios-otros</option>
         	    </select>
           	</div>
-    	    <div class="container__form__item">
+    	    <div class="container__form__item showes">
 				<P>El trato fue cordial?</P>
         	    <input type="radio" id="o-trato-cordial" name="trato-cordial" value="trato cordial" >
         	    <label for="trato-cordial">Sí</label>
         	    <input type="radio" id="o-trato-no-cordial" name="trato-cordial" value="trato no cordial">
         	    <label for="trato-no-cordial">No</label>
     	    </div>
-	        <div class="container__form__item">
+	        <div class="container__form__item showes">
 				<p>Se cumplieron los acuerdos?</p>
     	        <input type="radio" id="s-acuerdos-cumplidos" name="acuerdos" value="acuerdos cumplidos" >
     	        <label for="acuerdos cumplidos">Sí</label>
     	        <input type="radio" id="s-acuerdos-no-cumplidos" name="acuerdos" value="acuerdos no cumplidos" >
     	        <label for="acuerdos-no-cumplidos">No</label>
     	    </div>
-	        <div class="container__form__item">
+			<div class="container__form__item showes">
+				<P>Se efectuó el pago en tiempo y forma?</P>
+				<input type="radio" id="o-servicio-tiempo-forma" name="servicio-tiempo-forma" value="servicio en tiempo y forma" >
+				<label for="servicio-tiempo-forma">Sí</label>
+				<input type="radio" id="o-servicio-no-tiempo-forma" name="servicio-tiempo-forma" value="servicio no tiempo forma" >
+				<label for="servicio-no-tiempo-forma">No</label>
+			</div>							
+	        <div class="container__form__item showes">
 				<P>Realizaría un nuevo servicio para el solicitante?</P>
     	        <input type="radio" id="si-nuevo-servicio" name="nuevo-servicio" value="si nuevo servicio" >
         	    <label for="si-nuevo-servicio">Sí</label>
         	    <input type="radio" id="no-nuevo-servicio" name="nuevo-servicio" value="no nuevo servicio" >
         	    <label for="no-nuevo-servicio">No</label>
         	</div>
-	        <div class="container__form__item">
+	        <div class="container__form__item showes">
 				<p>Cómo evaluaria su experiencia?</p>
     	        <input type="radio" id="s-resultado-final-muy-satisfactorio" name="resultado-final" value="resultado final muy satisfactorio" >
         	    <label for="resultado-final-muy-satisfactorio">Muy satisfactoria</label>
@@ -192,17 +199,183 @@
         	    <input type="radio" id="s-resultado-final-no-satisfactorio" name="resultado-final" value="resultado final no satisfactorio">
         	    <label for="resultado-final-no-satisfactorio">No satisfactoria</label>
     	    </div>
-          	<div class="container__form__justifique">
+          	<div class="container__form__justifique showes">
 				<label for="justifique">Justifique su evaluación</label>
 			</div>
-		    <div class="container__form__referencias"	 > 
+		    <div class="container__form__referencias showes"	 > 
 	    	  <textarea id="justifique" name="justifique" rows=10 cols=60></textarea>
          	</div>
-    	    <div class="container__form__botones">
+    	    <div class="container__form__botones showes">
         	    <input class="container__form__botones__reset" type="reset" value="Limpiar formulario">
             	<input class="container__form__botones__submit" type="submit" value="Enviar">
         	</div>  
-      </form> 
+      </form>
+	  
+	  <form class="container__form" action="/" id="formulario-evaluacion-oferente" method="POST">
+		<div class="container__form__item showen">
+			<label for="nombre">User ID:</label>
+			<input type="text" name="nombre" class="container__form__item__input">
+		  </div>
+		<div class="container__form__item showen">
+			<label for="seofrece">Services:</label>
+			<select name="seofrece" class="container__form__item__input">
+			  <option value="foarreglos1">Repairs-Masonry</option>
+			  <option value="foarreglos2">Repairs-Carpentry</option>                
+			  <option value="foarreglos3">Repairs-Gas</option>
+			  <option value="foarreglos4">Repairs-Electricidad</option>
+			  <option value="foarreglos5">Repairs-Painting</option>
+			  <option value="foarreglos6">Repairs-Plumbing</option>
+			  <option value="foarreglos7">Repairs-Gutters</option>
+			  <option value="foarreglos8">Repairs-other</option>
+			  <option value="focuidados1">Attendance-Seniors</option>
+			  <option value="focuidados2">Attendance-Baby Sitting</option>
+			  <option value="focuidados3">Attendance-Nursing</option>
+			  <option value="focuidados4">Attendance-Kinesiology</option>
+			  <option value="foeducacion1">Education-Private Tuition</option>
+			  <option value="foeducacion2">Education-Exam Preparations</option>
+			  <option value="foeducacion3">Education-other</option>
+			  <option value="foestetica1">Aesthetics-Massages</option>
+			  <option value="foestetica2">Aesthetics-Make up special events</option>
+			  <option value="foestetica3">Aesthetics-Manicure</option>
+			  <option value="foestetica4">Aesthetics-Pedicure</option>
+			  <option value="foestetica5">Aesthetics-other</option>
+			  <option value="foservicios1">Services-Gardening</option>
+			  <option value="foservicios2">Services-Cleaning</option>
+			  <option value="foservicios3">Services-other</option>
+			</select>
+		</div>	
+		<div class="container__form__item showen">
+			<P>Was the treatment cordial?</P>
+			<input type="radio" id="o-trato-cordial" name="trato-cordial" value="trato cordial" >
+			<label for="trato-cordial">Yes</label>
+			<input type="radio" id="o-trato-no-cordial" name="trato-cordial" value="trato no cordial">
+			<label for="trato-no-cordial">No</label>
+		</div>
+		<div class="container__form__item showen">
+			<p>Were the agreements fulfilled?</p>
+			<input type="radio" id="o-acuerdos-cumplidos" name="acuerdos" value="acuerdos cumplidos" >
+			<label for="acuerdos cumplidos">Yes</label>
+			<input type="radio" id="o-acuerdos-no-cumplidos" name="acuerdos" value="acuerdos no cumplidos" >
+			<label for="acuerdos-no-cumplidos">No</label>
+		</div>
+		<div class="container__form__item showen">
+			<P>Was the payment made in a timely manner?</P>
+			<input type="radio" id="o-servicio-tiempo-forma" name="servicio-tiempo-forma" value="servicio en tiempo y forma" >
+			<label for="servicio-tiempo-forma">Yes</label>
+			<input type="radio" id="o-servicio-no-tiempo-forma" name="servicio-tiempo-forma" value="servicio no tiempo forma" >
+			<label for="servicio-no-tiempo-forma">No</label>
+		</div>
+		<div class="container__form__item showen">
+			<P>Would you perform a new service for the applicant??</P>
+			<input type="radio" id="o-nuevo-servicio-si" name="nuevo-servicio" value="nuevo servicio si" >
+			<label for="nuevo-servicio-si">Yes</label>
+			<input type="radio" id="o-nuevo-servicio-no" name="nuevo-servicio" value="nuevo servicio no" >
+			<label for="nuevo-servicio-no">No</label>
+		</div>
+		<div class="container__form__item showen">
+			<p>How would you evaluate your experience?</p>
+			<input type="radio" id="o-resultado-final-muy-satisfactorio" name="resultado-final" value="resultado final muy satisfactorio" >
+			<label for="resultado-final-muy-satisfactorio">Very satisfying</label>
+			<input type="radio" id="o-resultado-final-satisfactorio" name="resultado-final" value="resultado final no satisfactorio" >
+			<label for="resultado-final-satisfactorio">Satisfactory</label>
+			<input type="radio" id="o-resultado-final-no-satisfactorio" name="resultado-final" value="resultado final no satisfactorio">
+			<label for="resultado-final-no-satisfactorio">Unsatisfactory</label>
+		</div>
+		  <div class="container__form__justifique showen">
+			<label for="justifique">Justify your evaluation</label>
+		</div>
+		<div class="container__form__referencias showen"> 
+		  <textarea id="justifique" name="justifique" rows=10 cols=60></textarea>
+		 </div>
+	 <div class="container__form__botones showen">
+		<input class="container__form__botones__reset" type="reset" value="Clean Form">
+		<input class="container__form__botones__submit" type="submit" value="Send">
+	</div>  
+  	</form> 
+
+ 	<form class="container__form" action="/" method="POST">
+	<div class="container__form__item showpt">
+		<label for="nombre">ID do usuário:</label>
+		<input type="text" name="nombre" class="container__form__item__input">
+	</div>
+	<div class="container__form__item showpt">
+		<label for="seofrece">Serviços:</label>
+		<select name="seofrece" class="container__form__item__input">
+		  <option value="foarreglos1">Reparos-Alvenaria</option>
+		  <option value="foarreglos2">Reparos-Carpintaria</option>                
+		  <option value="foarreglos3">Reparos-Gas</option>
+		  <option value="foarreglos4">Reparos-Electricidade</option>
+		  <option value="foarreglos5">Reparos-Pintura</option>
+		  <option value="foarreglos6">Reparos-Plomería</option>
+		  <option value="foarreglos7">Reparos-Canalones</option>
+		  <option value="foarreglos8">Reparos-outros</option>
+		  <option value="focuidados1">Atenção-Idosos</option>
+		  <option value="focuidados2">Atenção-Baby Sitting</option>
+		  <option value="focuidados3">Atenção-Enfermagem</option>
+		  <option value="focuidados4">Atenção-Cinesiologia</option>
+		  <option value="foeducacion1">Educação-Aulas particulares</option>
+		  <option value="foeducacion2">Educação-Preparação exames</option>
+		  <option value="foeducacion3">Educação-outros</option>
+		  <option value="foestetica1">Estética-Massagens</option>
+		  <option value="foestetica2">Estética-Maquiagem eventos especiais</option>
+		  <option value="foestetica3">Estética-Manicure</option>
+		  <option value="foestetica4">Estética-Pedicure</option>
+		  <option value="foestetica5">Estética-outros</option>
+		  <option value="foservicios1">Serviços-Jardinagem</option>
+		  <option value="foservicios2">Serviços-Limpeza</option>
+		  <option value="foservicios3">Serviços-outros</option>
+		</select>
+	</div>	
+	<div class="container__form__item showpt">
+		<P>O tratamento foi cordial?</P>
+		<input type="radio" id="o-trato-cordial" name="trato-cordial" value="trato cordial" >
+		<label for="trato-cordial">Sim</label>
+		<input type="radio" id="o-trato-no-cordial" name="trato-cordial" value="trato no cordial">
+		<label for="trato-no-cordial">Não</label>
+	</div>
+	<div class="container__form__item showpt">
+		<p>Os acordos foram cumpridos?</p>
+		<input type="radio" id="o-acuerdos-cumplidos" name="acuerdos" value="acuerdos cumplidos" >
+		<label for="acuerdos cumplidos">Sim</label>
+		<input type="radio" id="o-acuerdos-no-cumplidos" name="acuerdos" value="acuerdos no cumplidos" >
+		<label for="acuerdos-no-cumplidos">Não</label>
+	</div>
+	<div class="container__form__item showpt">
+		<P>O serviço foi prestado em tempo hábil?</P>
+		<input type="radio" id="o-servicio-tiempo-forma" name="servicio-tiempo-forma" value="servicio en tiempo y forma" >
+		<label for="servicio-tiempo-forma">Sim</label>
+		<input type="radio" id="o-servicio-no-tiempo-forma" name="servicio-tiempo-forma" value="servicio no tiempo forma" >
+		<label for="servicio-no-tiempo-forma">Não</label>
+	</div>
+	<div class="container__form__item showpt">
+		<P>Você realizaria um novo serviço para o solicitante?</P>
+		<input type="radio" id="o-nuevo-servicio-si" name="nuevo-servicio" value="nuevo servicio si" >
+		<label for="nuevo-servicio-si">Sim</label>
+		<input type="radio" id="o-nuevo-servicio-no" name="nuevo-servicio" value="nuevo servicio no" >
+		<label for="nuevo-servicio-no">Não</label>
+	</div>
+	<div class="container__form__item showpt">
+		<p>Como você avalia sua experiência?</p>
+		<input type="radio" id="o-resultado-final-muy-satisfactorio" name="resultado-final" value="resultado final muy satisfactorio" >
+		<label for="resultado-final-muy-satisfactorio">Muito satisfatória</label>
+		<input type="radio" id="o-resultado-final-satisfactorio" name="resultado-final" value="resultado final no satisfactorio" >
+		<label for="resultado-final-satisfactorio">Satisfatória</label>
+		<input type="radio" id="o-resultado-final-no-satisfactorio" name="resultado-final" value="resultado final no satisfactorio">
+		<label for="resultado-final-no-satisfactorio">Insatisfatória</label>
+	</div>
+	  <div class="container__form__justifique showpt">
+		<label for="justifique">Justifique sua avaliação</label>
+	</div>
+	<div class="container__form__referencias showpt"> 
+	  <textarea id="justifique" name="justifique" rows=10 cols=60></textarea>
+	 </div>
+	<div class="container__form__botones showpt">
+	<input class="container__form__botones__reset" type="reset" value="Limpar formulário">
+	<input class="container__form__botones__submit" type="submit" value="Mandar">
+	</div>  
+	</form> 
+	</div>	  
+
     </div>
 
 	<div id="login" class="w3-modal w3-transparent w3-auto w3-text-indigo" >
