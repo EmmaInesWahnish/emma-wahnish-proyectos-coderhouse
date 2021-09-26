@@ -453,7 +453,8 @@ a:hover {
   margin: 2em;
 }
  .container__filtros{
-   margin:2em;
+   margin:1em;
+   gap:2em;
  }
 /*fin para listados*/
 
@@ -606,6 +607,8 @@ button {
 .container__w400 {
   font-weight:400;
   color:#12355B;
+  margin:5px;
+  padding:5px;
 }
 
 /*animación del circulo en sección main de pagina principal*/
