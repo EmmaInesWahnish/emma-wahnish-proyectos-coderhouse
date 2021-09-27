@@ -422,7 +422,8 @@ a:hover {
 }
 
 .grid-stat {
-  justify-content: space-between;
+  width:100%;
+  display:grid;
   align-content:space-between;
   grid-auto-flow:row;
   grid-template-areas: 
