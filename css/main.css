@@ -582,6 +582,7 @@ table {
 .grid-graficos {
   display:grid;
   width:100%;
+  display:grid;
   justify-content: space-evenly;
   align-content:space-around;
   grid-auto-flow: row;
@@ -590,6 +591,42 @@ table {
     'tres cuatro';
 }
 /* fin grid graficos*/
+
+.grid-banner__image1 {
+  width:auto;
+  grid-area: one;
+}
+
+.grid-banner__image2 {
+  width: auto;
+  grid-area: two;
+}
+
+.grid-banner__image3 {
+  width: auto;
+  grid-area: three;
+}
+
+.grid-banner__image4 {
+  width: auto;
+  grid-area: four;
+}
+
+.grid-banner__image5 {
+  width: auto;
+  grid-area: five;
+}
+
+.grid-banner {
+  width:100%;
+  display:grid;
+  justify-content: space-evenly;
+  justify-items:right;
+  align-content:center;
+  grid-auto-flow:column;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: auto;
+}
 
 /*botones*/
 button {
