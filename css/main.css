@@ -596,38 +596,51 @@ table {
 
 .grid-banner__image1 {
   width:auto;
+  height:auto;
   grid-area: one;
+  background-color:blanchedalmond;
 }
 
 .grid-banner__image2 {
   width: auto;
+  height:auto;
   grid-area: two;
+  background-color: #FFAC44;
 }
 
 .grid-banner__image3 {
   width: auto;
+  height:auto;
   grid-area: three;
+  background-color: blanchedalmond;
 }
 
 .grid-banner__image4 {
   width: auto;
+  height:auto;
   grid-area: four;
+  background-color: #FFAC44;
 }
 
 .grid-banner__image5 {
   width: auto;
+  height: auto;
   grid-area: five;
+  background-color: blanchedalmond;
 }
 
 .grid-banner {
   width:100%;
   display:grid;
-  justify-content: space-evenly;
-  justify-items:right;
+  justify-items:center;
   align-content:center;
-  grid-auto-flow:column;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-columns: auto;
+  grid-auto-flow:row;
+  grid-template-areas:
+  'one'
+  'two'
+  'three'
+  'four'
+  'five';
 }
 
 /*botones*/
