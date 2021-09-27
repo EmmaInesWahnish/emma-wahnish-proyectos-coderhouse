@@ -595,35 +595,79 @@ table {
 /* fin grid graficos*/
 
 .grid-banner__image1 {
-  width:auto;
+  display:grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  align-items: center;
+  justify-items: center;
+  padding:10px;
+  font-size:2vw;
+  font-weight:400;
+  color:#2D85E5;
+  width:100%;
   height:auto;
   grid-area: one;
   background-color:blanchedalmond;
 }
 
 .grid-banner__image2 {
-  width: auto;
+  display:grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  align-items: center;
+  justify-items: center;
+  padding:10px;
+  font-size:2vw;
+  font-weight:400;
+  color:#2D85E5;
+  width:100%;
+  height:auto;
   height:auto;
   grid-area: two;
   background-color: #FFAC44;
 }
 
 .grid-banner__image3 {
-  width: auto;
+  display:grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  align-items: center;
+  justify-items: center;
+  padding:10px;
+  font-size:2vw;
+  font-weight:400;
+  color:#2D85E5;
+  width:100%;
+  height:auto;
   height:auto;
   grid-area: three;
   background-color: blanchedalmond;
 }
 
 .grid-banner__image4 {
-  width: auto;
+  display:grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  align-items: center;
+  justify-items: center;
+  padding:10px;
+  font-size:2vw;
+  font-weight:400;
+  color:#2D85E5;
+  width:100%;
+  height:auto;
   height:auto;
   grid-area: four;
   background-color: #FFAC44;
 }
 
 .grid-banner__image5 {
-  width: auto;
+  display:grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  align-items: center;
+  justify-items: center;
+  padding:10px;
+  font-size:2vw;
+  font-weight:400;
+  color:#2D85E5;
+  width:100%;
+  height:auto;
   height: auto;
   grid-area: five;
   background-color: blanchedalmond;
