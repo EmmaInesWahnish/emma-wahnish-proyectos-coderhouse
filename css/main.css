@@ -559,27 +559,28 @@ table {
 
 /*grid-graficos*/
 .grid-graficos__image1 {
-  width:48%;
+  width:auto;
   grid-area: uno;
 }
 
 .grid-graficos__image2 {
-  width: 48%;
+  width: auto;
   grid-area: dos;
 }
 
 .grid-graficos__image3 {
-  width: 48%;
+  width: auto;
   grid-area: tres;
 }
 
 .grid-graficos__image4 {
-  width: 48%;
+  width: auto;
   grid-area: cuatro;
 }
 
 .grid-graficos {
   width:100%;
+  display:grid;
   justify-content: space-evenly;
   align-content:space-around;
   grid-auto-flow: row;
@@ -588,6 +589,42 @@ table {
     'tres cuatro';
 }
 /* fin grid graficos*/
+
+.grid-banner__image1 {
+  width:auto;
+  grid-area: one;
+}
+
+.grid-banner__image2 {
+  width: auto;
+  grid-area: two;
+}
+
+.grid-banner__image3 {
+  width: auto;
+  grid-area: three;
+}
+
+.grid-banner__image4 {
+  width: auto;
+  grid-area: four;
+}
+
+.grid-banner__image5 {
+  width: auto;
+  grid-area: five;
+}
+
+.grid-banner {
+  width:100%;
+  display:grid;
+  justify-content: space-evenly;
+  justify-items:right;
+  align-content:center;
+  grid-auto-flow:column;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: auto;
+}
 
 /*botones*/
 button {
