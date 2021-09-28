@@ -444,6 +444,11 @@ a:focus{
   padding:10px;
 }
 
+.modal-content {
+  background-color: transparent;
+  padding:0;
+}
+
 /*para listados*/
 .espacio-listado {
   margin: 2em;
