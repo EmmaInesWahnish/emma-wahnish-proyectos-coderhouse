@@ -9,14 +9,14 @@
 h1 {
   font-family: Open+sans-serif;
   color:  #EFEFEF;
-  font-size:1.6rem;
+  font-size:2rem;
 }
 
 /*titulos h2 algo mas pequeños de color azul para la página principal */
 h2 {
   font-family: Open+sans-serif;
   color: #24B8CE;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -24,7 +24,7 @@ h2 {
 h4 {
   font-family: Open+sans-serif;
   color:#2D85E5;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 /*características del pie de pagina*/
@@ -108,7 +108,7 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: Open+sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   color: #91DBE6;
 }
 
@@ -173,7 +173,7 @@ a:focus{
   border:5px;
   margin:5px;
   padding:15px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   align-self: center;
   text-align: justify;
   font-style: 900;
@@ -685,7 +685,7 @@ table {
   color:#2D85E5;
   align-self: center;
   justify-self: content; 
-  font-size:1.5rem; 
+  font-size:1.5vw; 
 }
 
 .imgbanner-tipoa {
