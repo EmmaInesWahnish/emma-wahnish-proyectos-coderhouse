@@ -116,6 +116,7 @@ ul ul {
   margin:auto;
   position: absolute;
   background-color: #12355B;
+  color:#91DBE6;
   width: 100%;
   display: none;
 }
@@ -126,6 +127,10 @@ ul li:hover ul {
 
 a:hover {
   color: red;
+}
+
+a:focus{
+  color:red;
 }
 /* fin bloque del código para el menu*/
 
@@ -450,7 +455,7 @@ a:hover {
 /*fin para listados*/
 
 /*características de los formularios*/
-.container__form__botones__reset {
+.form__botones__reset {
   margin:15px;
   border-style: groove;
   text-transform: uppercase;
@@ -459,7 +464,7 @@ a:hover {
   background-color: #EEEEEE;
 } 
 
-.container__form__botones__submit {
+.form__botones__submit {
   margin:15px;
   border-style:groove;
   text-transform: uppercase;
@@ -468,7 +473,7 @@ a:hover {
   background-color: #EEEEEE; 
 }
 
-.container__form {
+.form {
   width:auto;
   gap:5px;
   align-content: center;
@@ -477,14 +482,14 @@ a:hover {
   font-weight: 400;
 }
 
-.container__form__item {
+.form__item {
   font-size: 1rem;
   padding: 5px;
   margin: 5px;
   border: 5px;
 }
 
-.container__form__item__input {
+.form__item__input {
   display:block;
   width: 40%;
   min-height: fit-content;
@@ -495,7 +500,7 @@ a:hover {
   border-style:solid;
 }
 
-.container__form__referencias {
+.form__referencias {
   display: block;
   border: 3px;
   padding: 5px;
@@ -503,7 +508,7 @@ a:hover {
   min-height: fit-content;
 }
 
-.container__form__descripcion {
+.form__descripcion {
   display:block;
   border:3px;
   padding:5px;
@@ -511,7 +516,7 @@ a:hover {
   min-height: fit-content;
 }
 
-.container__form__justifique {
+.form__justifique {
   display:block;
   border:3px;
   padding:5px;
@@ -673,6 +678,22 @@ table {
   'three'
   'four'
   'five';
+}
+
+.banner-text {
+  background-color: #EFEFEF;
+  color:#2D85E5;
+  align-self: center;
+  justify-self: content; 
+  font-size:1.5rem; 
+}
+
+.imgbanner-tipoa {
+  background-color: blanchedalmond;
+}
+
+.imgbanner-tipob {
+  background-color: #FFAC44; 
 }
 
 /*botones*/
