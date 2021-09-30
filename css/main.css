@@ -24,14 +24,14 @@ h2 {
 h4 {
   font-family: Open+sans-serif;
   color:#2D85E5;
-  font-size: 1.5em;
 }
 
 /*características del pie de pagina*/
 footer {
   display:block;
+  font-size:1em;
   margin:0;
-  padding:2em;
+  padding:1em;
   border:#12355B;
   font-family: Open+sans-serif;
   color:  #24B8CE;
@@ -45,7 +45,7 @@ footer {
 }
 
 .grid-effect__item1 {
-  width:40%;
+  width:50%;
 }
 
 .grid-effect__item2 {
@@ -173,7 +173,7 @@ a:hover {
   border:5px;
   margin:5px;
   padding:15px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   align-self: center;
   text-align: justify;
   font-style: 900;
@@ -592,7 +592,7 @@ table {
   align-items: center;
   justify-items: center;
   padding:10px;
-  font-size:1.2rem;
+  font-size:1.2em;
   font-weight:400;
   color:#2D85E5;
   width:100%;
@@ -623,7 +623,7 @@ table {
   align-items: center;
   justify-items: center;
   padding:10px;
-  font-size:1.2rem;
+  font-size:1.2em;
   font-weight:400;
   color:#2D85E5;
   width:100%;
@@ -639,7 +639,7 @@ table {
   align-items: center;
   justify-items: center;
   padding:10px;
-  font-size:1.2rem;
+  font-size:1.2em;
   font-weight:400;
   color:#2D85E5;
   width:100%;
@@ -655,7 +655,7 @@ table {
   align-items: center;
   justify-items: center;
   padding:10px;
-  font-size:1.2rem;
+  font-size:1.2em;
   font-weight:400;
   color:#2D85E5;
   width:100%;

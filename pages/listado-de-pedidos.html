@@ -435,80 +435,76 @@
 	</div>
 
 	<div id="login" class="w3-modal w3-transparent w3-auto w3-text-indigo" >
-		<div class="w3-modal-content" id="login">
-			<div>
-				<div>
-					<div>
-						<span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-						<div>
-							<form class="showes" class="form" action="/" id="formulario-login" method="POST">
-							  <div class="form__item" class="w3-input">
-								<label for="email">Dirección de E-mail:</label>
-								<input type="email" id="email" name="email" class="form__item__input">
-							  </div>
-							  <div class="form__item" class="w3-input">
-								<label for="pwd">Contraseña:</label>
-								<input type="password" id="pwd" name="pwd" class="form__item__input">
-							  </div>
-							  <div class="form__item">
-								<input type="checkbox" id="opcion1" name="opcion1" value="remember">
-								<label for="opcion1"> Recuerdeme</label>
-							  </div>
-							  <div class=form__item>
-								<p>Olvidé mi contraseña  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
-								<p>Recibirás un correo electrónico con instrucciones para generar una nueva contraseña</p>
-							  </div>
-							  <div class="form__botones">
-								<input class="form__botones__reset" type="reset" value="Limpiar formulario">
-								<input class="form__botones__submit" type="submit" value="Enviar">
-							  </div>
-							</form>
-							<form class="showen" class="form" action="/" id="formulario-login" method="POST">
-								<div class="form__item" class="w3-input">
-								  <label for="email">Email Address:</label>
-								  <input type="email" id="email" name="email" class="form__item__input">
-								</div>
-								<div class="form__item" class="w3-input">
-								  <label for="pwd">Password:</label>
-								  <input type="password" id="pwd" name="pwd" class="form__item__input">
-								</div>
-								<div class="form__item">
-								  <input type="checkbox" id="opcion1" name="opcion1" value="remember">
-								  <label for="opcion1">Remember me</label>
-								</div>
-								<div class=form__item>
-								  <p>I forgot my password  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
-								  <p>You will receive an email with instructions to generate a new password</p>
-								</div>
-								<div class="form__botones">
-								  <input class="form__botones__reset" type="reset" value="Clean form">
-								  <input class="form__botones__submit" type="submit" value="Send">
-								</div>
-							  </form>
-							  <form class="showpt" class="form" action="/" id="formulario-login" method="POST">
-								<div class="form__item" class="w3-input">
-								  <label for="email">Endereço de e-mail:</label>
-								  <input type="email" id="email" name="email" class="form__item__input">
-								</div>
-								<div class="form__item" class="w3-input">
-								  <label for="pwd">Senha:</label>
-								  <input type="password" id="pwd" name="pwd" class="form__item__input">
-								</div>
-								<div class="form__item">
-								  <input type="checkbox" id="opcion1" name="opcion1" value="remember">
-								  <label for="opcion1">Lembre de mim</label>
-								</div>
-								<div class=form__item>
-								  <p>Esqueci a minha senha  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
-								  <p>Você receberá um e-mail com instruções para gerar uma nova senha</p>
-								</div>
-								<div class="form__botones">
-								  <input class="form__botones__reset" type="reset" value="Limpar o formulário">
-								  <input class="form__botones__submit" type="submit" value="Mandar">
-								</div>
-							  </form>
+		<div class="w3-modal-content">
+			<div class="modal-container">
+				<span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+				<div class=container>
+					<form class="showes" class="form" action="/" id="formulario-login" method="POST">
+					  <div class="form__item" class="w3-input">
+						<label for="email">Dirección de E-mail:</label>
+						<input type="email" id="email" name="email" class="form__item__input">
+					  </div>
+					  <div class="form__item" class="w3-input">
+						<label for="pwd">Contraseña:</label>
+						<input type="password" id="pwd" name="pwd" class="form__item__input">
+					  </div>
+					  <div class="form__item">
+						<input type="checkbox" id="opcion1" name="opcion1" value="remember">
+						<label for="opcion1"> Recuerdeme</label>
+					  </div>
+					  <div class=form__item>
+						<p>Olvidé mi contraseña  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+						<p>Recibirás un correo electrónico con instrucciones para generar una nueva contraseña</p>
+					  </div>
+					  <div class="form__botones">
+						<input class="form__botones__reset" type="reset" value="Limpiar formulario">
+						<input class="form__botones__submit" type="submit" value="Enviar">
+					  </div>
+					</form>
+					<form class="showen" class="form" action="/" id="formulario-login" method="POST">
+						<div class="form__item" class="w3-input">
+						  <label for="email">Email Address:</label>
+						  <input type="email" id="email" name="email" class="form__item__input">
 						</div>
-					</div>
+						<div class="form__item" class="w3-input">
+						  <label for="pwd">Password:</label>
+						  <input type="password" id="pwd" name="pwd" class="form__item__input">
+						</div>
+						<div class="form__item">
+						  <input type="checkbox" id="opcion1" name="opcion1" value="remember">
+						  <label for="opcion1">Remember me</label>
+						</div>
+						<div class=form__item>
+						  <p>I forgot my password  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+						  <p>You will receive an email with instructions to generate a new password</p>
+						</div>
+						<div class="form__botones">
+						  <input class="form__botones__reset" type="reset" value="Clean form">
+						  <input class="form__botones__submit" type="submit" value="Send">
+						</div>
+					  </form>
+					  <form class="showpt" class="form" action="/" id="formulario-login" method="POST">
+						<div class="form__item" class="w3-input">
+						  <label for="email">Endereço de e-mail:</label>
+						  <input type="email" id="email" name="email" class="form__item__input">
+						</div>
+						<div class="form__item" class="w3-input">
+						  <label for="pwd">Senha:</label>
+						  <input type="password" id="pwd" name="pwd" class="form__item__input">
+						</div>
+						<div class="form__item">
+						  <input type="checkbox" id="opcion1" name="opcion1" value="remember">
+						  <label for="opcion1">Lembre de mim</label>
+						</div>
+						<div class=form__item>
+						  <p>Esqueci a minha senha  <a href="mailto:helpdesk@groovinads.com">helpdesk@groovinads.com</a></p>
+						  <p>Você receberá um e-mail com instruções para gerar uma nova senha</p>
+						</div>
+						<div class="form__botones">
+						  <input class="form__botones__reset" type="reset" value="Limpar o formulário">
+						  <input class="form__botones__submit" type="submit" value="Mandar">
+						</div>
+					  </form>
 				</div>
 			</div>
 		</div>
@@ -516,118 +512,110 @@
 
 	<div id="register" class="w3-modal w3-auto w3-transparent w3-text-indigo" >
 		<div class="w3-modal-content">
-			<div>
-				<div>
-					<div class="modal-container">
-						<span onclick="document.getElementById('register').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-						<div>
-							<form class="showes" class="form" action="/" id="formulario-register" method="POST">
-								<div class="form__item" class="w3-input">
-									<label for="email">Dirección de E-mail:</label>
-									<input type="email" id="email" name="email" class="form__item__input">
-								</div>
-								<div class="form__item" class="w3-input">
-									<label for="pwd1">Contraseña:</label>
-									<input type="password" id="pwd1" name="pwd1" class="form__item__input">
-								</div>
-								<div class="form__item" class="w3-input">
-									<label for="pwd">Repetir Contraseña:</label>
-									<input type="password" id="pwd2" name="pwd2" class="form__item__input">
-								</div>
-								<div class=form__item>
-									<p>Recibirá un correo electrónico con su identificación de usuario</p>
-									<p>Mediante la misma podrá ingresar solicitudes / ofrecimientos</p>
-								</div>
-								<div class="form__botones">
-									<input class="form__botones__reset" type="reset" value="Limpiar formulario">
-									<input class="form__botones__submit" type="submit" value="Enviar">
-								</div>
-							</form>
-							<form class="showen" class="form" action="/" id="formulario-register" method="POST">
-								<div class="form__item" class="w3-input">
-									<label for="email">Email Address:</label>
-									<input type="email" id="email" name="email" class="form__item__input">
-								</div>
-								<div class="form__item" class="w3-input">
-									<label for="pwd1">Password:</label>
-									<input type="password" id="pwd1" name="pwd1" class="form__item__input">
-								</div>
-								<div class="form__item" class="w3-input">
-									<label for="pwd">Re-enter password:</label>
-									<input type="password" id="pwd2" name="pwd2" class="form__item__input">
-								</div>
-								<div class=form__item>
-									<p>You will receive an email with your user ID</p>
-									<p>You need the user id to enter your requests or offers</p>
-								</div>
-								<div class="form__botones">
-									<input class="form__botones__reset" type="reset" value="Clean form">
-									<input class="form__botones__submit" type="submit" value="Send">
-								</div>
-							</form>
-							<form class="showpt" class="form" action="/" id="formulario-register" method="POST">
-								<div class="form__item" class="w3-input">
-									<label for="email">Endereço de e-mail:</label>
-									<input type="email" id="email" name="email" class="form__item__input">
-								</div>
-								<div class="form__item" class="w3-input">
-									<label for="pwd1">Senha:</label>
-									<input type="password" id="pwd1" name="pwd1" class="form__item__input">
-								</div>
-								<div class="form__item" class="w3-input">
-									<label for="pwd">Digite novamente a senha:</label>
-									<input type="password" id="pwd2" name="pwd2" class="form__item__input">
-								</div>
-								<div class=form__item>
-									<p>Você receberá um e-mail com seu ID de usuário</p>
-									<p>Você precisa do ID do usuário para inserir solicitações ou ofertas</p>
-								</div>
-								<div class="form__botones">
-									<input class="form__botones__reset" type="reset" value="Limpar o formulário">
-									<input class="form__botones__submit" type="submit" value="Mandar">
-								</div>
-							</form>
+			<div class="modal-container">
+				<span onclick="document.getElementById('register').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+				<div class=container>
+					<form class="showes" class="form" action="/" id="formulario-register" method="POST">
+						<div class="form__item" class="w3-input">
+							<label for="email">Dirección de E-mail:</label>
+							<input type="email" id="email" name="email" class="form__item__input">
 						</div>
-					</div>
+						<div class="form__item" class="w3-input">
+							<label for="pwd1">Contraseña:</label>
+							<input type="password" id="pwd1" name="pwd1" class="form__item__input">
+						</div>
+						<div class="form__item" class="w3-input">
+							<label for="pwd">Repetir Contraseña:</label>
+							<input type="password" id="pwd2" name="pwd2" class="form__item__input">
+						</div>
+						<div class=form__item>
+							<p>Recibirá un correo electrónico con su identificación de usuario</p>
+							<p>Mediante la misma podrá ingresar solicitudes / ofrecimientos</p>
+						</div>
+						<div class="form__botones">
+							<input class="form__botones__reset" type="reset" value="Limpiar formulario">
+							<input class="form__botones__submit" type="submit" value="Enviar">
+						</div>
+					</form>
+					<form class="showen" class="form" action="/" id="formulario-register" method="POST">
+						<div class="form__item" class="w3-input">
+							<label for="email">Email Address:</label>
+							<input type="email" id="email" name="email" class="form__item__input">
+						</div>
+						<div class="form__item" class="w3-input">
+							<label for="pwd1">Password:</label>
+							<input type="password" id="pwd1" name="pwd1" class="form__item__input">
+						</div>
+						<div class="form__item" class="w3-input">
+							<label for="pwd">Re-enter password:</label>
+							<input type="password" id="pwd2" name="pwd2" class="form__item__input">
+						</div>
+						<div class=form__item>
+							<p>You will receive an email with your user ID</p>
+							<p>You need the user id to enter your requests or offers</p>
+						</div>
+						<div class="form__botones">
+							<input class="form__botones__reset" type="reset" value="Clean form">
+							<input class="form__botones__submit" type="submit" value="Send">
+						</div>
+					</form>
+					<form class="showpt" class="form" action="/" id="formulario-register" method="POST">
+						<div class="form__item" class="w3-input">
+							<label for="email">Endereço de e-mail:</label>
+							<input type="email" id="email" name="email" class="form__item__input">
+						</div>
+						<div class="form__item" class="w3-input">
+							<label for="pwd1">Senha:</label>
+							<input type="password" id="pwd1" name="pwd1" class="form__item__input">
+						</div>
+						<div class="form__item" class="w3-input">
+							<label for="pwd">Digite novamente a senha:</label>
+							<input type="password" id="pwd2" name="pwd2" class="form__item__input">
+						</div>
+						<div class=form__item>
+							<p>Você receberá um e-mail com seu ID de usuário</p>
+							<p>Você precisa do ID do usuário para inserir solicitações ou ofertas</p>
+						</div>
+						<div class="form__botones">
+							<input class="form__botones__reset" type="reset" value="Limpar o formulário">
+							<input class="form__botones__submit" type="submit" value="Mandar">
+						</div>
+					</form>
 				</div>
-			  </div>
+			</div>
 		</div>
 	</div>
 
 	<div id="idioma" class="w3-modal w3-auto w3-transparent w3-text-indigo" >
 		<div class="w3-modal-content">
-			<div>
-				<div>
-					<div class="modal-container">
-						<span onclick="document.getElementById('idioma').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-						<!--aqui inserto selextor de idiomas-->
-						<div>
-							<form class="form" type="" action = "/" id="formulario-selector-idiomas">
-								<div class="form__item showes" >
-									<label for="elige-idioma">Idioma?</label>
-									<button onclick="myloades()" type="button" class="form__item__input">Español</button>
-									<button onclick="myloaden()" type="button" class="form__item__input">Inglés</button>
-									<button onclick="myloadpt()" type="button" class="form__item__input">Portugés</button>
-								</div>
-							</form>
-							<form class="form showen" type="" action = "/" id="formulario-selector-idiomas">
-								<div class="form__item" >
-									<label for="elige-idioma">Idioma?</label>
-									<button onclick="myloades()" type="button" class="form__item__input">Spanish</button>
-									<button onclick="myloaden()" type="button" class="form__item__input">English</button>
-									<button onclick="myloadpt()" type="button" class="form__item__input">Portuguese</button>
-								</div>
-							</form>
-							<form class="form showpt" type="" action = "/" id="formulario-selector-idiomas">
-								<div class="form__item" >
-									<label for="elige-idioma">Idioma?</label>
-									<button onclick="myloades()" type="button" class="form__item__input">Espanhol</button>
-									<button onclick="myloaden()" type="button" class="form__item__input">Inglês</button>
-									<button onclick="myloadpt()" type="button" class="form__item__input">Português</button>
-								</div>
-							</form>
+			<div class="modal-container">
+				<span onclick="document.getElementById('idioma').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+				<!--aqui inserto selextor de idiomas-->
+				<div class=container>
+					<form class="form" type="" action = "/" id="formulario-selector-idiomas">
+						<div class="form__item showes" >
+							<label for="elige-idioma">Idioma?</label>
+							<button onclick="myloades()" type="button" class="form__item__input">Español</button>
+							<button onclick="myloaden()" type="button" class="form__item__input">Inglés</button>
+							<button onclick="myloadpt()" type="button" class="form__item__input">Portugés</button>
 						</div>
-					</div>
+					</form>
+					<form class="form showen" type="" action = "/" id="formulario-selector-idiomas">
+						<div class="form__item" >
+							<label for="elige-idioma">Language?</label>
+							<button onclick="myloades()" type="button" class="form__item__input">Spanish</button>
+							<button onclick="myloaden()" type="button" class="form__item__input">English</button>
+							<button onclick="myloadpt()" type="button" class="form__item__input">Portuguese</button>
+						</div>
+					</form>
+					<form class="form showpt" type="" action = "/" id="formulario-selector-idiomas">
+						<div class="form__item" >
+							<label for="elige-idioma">Lingua?</label>
+							<button onclick="myloades()" type="button" class="form__item__input">Espanhol</button>
+							<button onclick="myloaden()" type="button" class="form__item__input">Inglês</button>
+							<button onclick="myloadpt()" type="button" class="form__item__input">Português</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
