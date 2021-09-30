@@ -19,120 +19,138 @@
 
 <body onload="myloades()">
 	<div class="grid-stat">
-	<header class="super-grid__item1 item1">
-		<nav class="super-grid__item1__nav" style="width:100%">
-			<ul class="padre">
-				<li class="showes"><a href="#">Listados</a>
-					<ul>
-						<li><a href="../pages/listado-de-pedidos.html">Pedidos</a></li>
-						<li><a href="../pages/listado-de-ofrecimientos.html">Ofrecimientos</a></li>
-					</ul>
+		<header>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark showes super-grid__item1__nav item1">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			  <ul class="navbar-nav">
+				<li class="nav-item">
+					<img id="el-idioma" class="header-line-1__idioma" src="../images/language.png" alt="Idioma" onclick="document.getElementById('idioma').style.display='block'" />
 				</li>
-				<li class="showes"><a href="../pages/estadisticas-de-pedidos.html">Estadísticas</a></li>
-				<li class="showes"><a href="#">Evaluaciones</a>
-					<ul>
-						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Evaluación Solicitante</a></li>
-						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Evaluación Oferente</a></li>
-					</ul>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">HOME</a>
 				</li>
-				<li class="showes"><a href="#">Iniciar Sesion</a>
-					<ul>
-						<li style="width:100%">
-							<a onclick="document.getElementById('login').style.display='block'">
-								INICIAR SESIÓN
-							</a>		
-						</li>
-						<li style="width:100%">
-							<a onclick="document.getElementById('register').style.display='block'">
-								REGISTRARSE
-							</a>		
-						</li>
-					</ul>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/listado-de-pedidos.html">Pedidos</a>
 				</li>
-				<li class="showes"><a href="../pages/acerca-de.html">Acerca de:</a></li>
-				<li class="showes"><a href="../pages/contact-us.html">Contáctenos</a></li>
-			</ul>	
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/listado-de-ofrecimientos.html">Ofrecimientos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/estadisticas-de-pedidos.html">Estadísticas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/formulario-de-evaluacion-solicitantes.html">Evaluación Solicitante</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/formulario-de-evaluacion-oferentes.html">Evaluación Oferente</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" onclick="document.getElementById('login').style.display='block'">INICIAR SESIÓN</a>
+				</li>
+				<li>
+					<a class="nav-link" onclick="document.getElementById('register').style.display='block'">REGISTRARSE</a>
+				</li>
+				<li>
+					<a class="nav-link" href="../pages/acerca-de.html">Acerca de:</a>
+				</li>
+				<li>
+					<a class="nav-link" href="../pages/contact-us.html">Contáctenos</a>
+				</li>
+			  </ul>
+			</div>
+		  </nav>
+
+		  <nav class="navbar navbar-expand-md bg-dark navbar-dark showen super-grid__item1__nav item1">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			  <ul class="navbar-nav">
+				<li class="nav-item">
+					<img id="el-idioma" class="header-line-1__idioma" src="../images/language.png" alt="Idioma" onclick="document.getElementById('idioma').style.display='block'" />
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">HOME</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/listado-de-pedidos.html">Requests listing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/listado-de-ofrecimientos.html">Offers listing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/estadisticas-de-pedidos.html">Statistics</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/formulario-de-evaluacion-solicitantes.html">Requestor Evaluation</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/formulario-de-evaluacion-oferentes.html">Supplier Evaluation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" onclick="document.getElementById('login').style.display='block'">Login</a>
+				</li>
+				<li>
+					<a class="nav-link" onclick="document.getElementById('register').style.display='block'">REGISTER</a>
+				</li>
+				<li>
+					<a class="nav-link" href="../pages/acerca-de.html">About us:</a>
+				</li>
+				<li>
+					<a class="nav-link" href="../pages/contact-us.html">Contact us</a>
+				</li>
+			  </ul>
+			</div>
 		</nav>
 
-		<nav class="super-grid__item1__nav" style="width:100%">
-			<ul class="padre">
-				<li class="showen"><a href="#">Listings</a>
-					<ul>
-						<li><a href="../pages/listado-de-pedidos.html">Requests listing</a></li>
-						<li><a href="../pages/listado-de-ofrecimientos.html">Offers listing</a></li>
-					</ul>
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark showpt super-grid__item1__nav item1">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			  <ul class="navbar-nav">
+				<li class="nav-item">
+					<img id="el-idioma" class="header-line-1__idioma" src="../images/language.png" alt="Idioma" onclick="document.getElementById('idioma').style.display='block'" />
 				</li>
-				<li class="showen"><a href="../pages/estadisticas-de-pedidos.html">Statistics</a></li>
-				<li class="showen"><a href="#">Evaluations</a>
-					<ul>
-						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Requestor Evaluation</a></li>
-						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Supplier Evaluation</a></li>
-					</ul>
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">HOME</a>
 				</li>
-				<li class="showen"><a href="#">Login/Register</a>
-					<ul>
-						<li style="width:100%">
-							<a onclick="document.getElementById('login').style.display='block'">
-								LOGIN
-							</a>		
-						</li>
-						<li style="width:100%">
-							<a onclick="document.getElementById('register').style.display='block'">
-								REGISTER
-							</a>		
-						</li>
-					</ul>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/listado-de-pedidos.html">Lista de solicitações</a>
 				</li>
-				<li class="showen"><a href="../pages/acerca-de.html">About us:</a></li>
-				<li class="showen"><a href="../pages/contact-us.html">Contact us</a></li>
-			</ul>	
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/listado-de-ofrecimientos.html">Lista de Oferecimientos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/estadisticas-de-pedidos.html">Estatisticas</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../pages/formulario-de-evaluacion-solicitantes.html">Avaliação do solicitante</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="../pages/formulario-de-evaluacion-oferentes.html">Avaliação do fornecedor</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" onclick="document.getElementById('login').style.display='block'">Inicio de Sessão</a>
+				</li>
+				<li>
+					<a class="nav-link" onclick="document.getElementById('register').style.display='block'">REGISTRO</a>
+				</li>
+				<li>
+					<a class="nav-link" href="../pages/acerca-de.html">Sobre Nós:</a>
+				</li>
+				<li>
+					<a class="nav-link" href="../pages/contact-us.html">Contate-nos</a>
+				</li>
+			  </ul>
+			</div>
 		</nav>
-
-		<nav class="super-grid__item1__nav" style="width:100%">
-			<ul class="padre">
-				<li class="showpt"><a href="#">Listagens</a>
-					<ul>
-						<li><a href="../pages/listado-de-pedidos.html">Lista de solicitações</a></li>
-						<li><a href="../pages/listado-de-ofrecimientos.html">Lista de oferecimentos</a></li>
-					</ul>
-				</li>
-				<li class="showpt"><a href="../pages/estadisticas-de-pedidos.html">Estatisticas</a></li>
-				<li class="showpt"><a href="#">Avaliações</a>
-					<ul>
-						<li><a href="../pages/formulario-de-evaluacion-solicitantes.html">Avaliação do solicitante</a></li>
-						<li><a href="../pages/formulario-de-evaluacion-oferentes.html">Avaliação do fornecedor</a></li>
-					</ul>
-				</li>
-				<li class="showpt"><a href="#">Login/Registro</a>
-					<ul>
-						<li style="width:100%">
-							<a onclick="document.getElementById('login').style.display='block'">
-								Inicio de Sessão
-							</a>		
-						</li>
-						<li style="width:100%">
-							<a onclick="document.getElementById('register').style.display='block'">
-								REGISTRO
-							</a>		
-						</li>
-					</ul>
-				</li>
-				<li class="showpt"><a href="../pages/acerca-de.html">Sobre nós:</a></li>
-				<li class="showpt"><a href="../pages/contact-us.html">Contate-Nos</a></li>
-			</ul>	
-		</nav>
-
-		<div class="header-line-1 super-grid__item1__logo item2">
-			<img class="header-line-1__image" src="../images/handshake.png" alt="Conectando personas logo"/> <!--- Aqui va el logo --->
-			<h2 class="header-line-1__title showes">Conectando personas</h2>
-			<h2 class="header-line-1__title showen">Connecting people</h2>
-			<h2 class="header-line-1__title showpt">Conectando pessoas</h2>				
-			<img id="el-idioma" class="header-line-1__idioma" src="../images/language.png" alt="Idioma" onclick="document.getElementById('idioma').style.display='block'" />
-			<a class="header-line-1__exit" href="../index.html" ><img src="../images/icono-exit.png" alt="Icono Exit" /></a>
-		</div>	
 	</header>
 
-	<div class="about item3">
+	<div class="about item2">
 		<div class="container-fluid">
 			<div class="row">
 			<div class="col-md-6">
@@ -494,9 +512,9 @@
 	</div>
 
 	<div id="login" class="w3-modal w3-transparent w3-auto w3-text-indigo" >
-		<div class="w3-modal-content" id="login">
-			<div class="modal-dialog">
-				<div class="modal-content">
+		<div class="w3-modal-content">
+			<div>
+				<div>
 					<div class="modal-container">
 						<span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-display-topright">&times;</span>					
 						<div class=container>
@@ -574,9 +592,9 @@
 	</div>
 
 	<div id="register" class="w3-modal w3-auto w3-transparent w3-text-indigo" >
-		<div class="w3-modal-content" id="register">
-			<div class="modal-dialog">
-				<div class="modal-content">
+		<div class="w3-modal-content">
+			<div>
+				<div>
 					<div class="modal-container">
 						<span onclick="document.getElementById('register').style.display='none'" class="w3-button w3-display-topright">&times;</span>					
 						<div class=container>
@@ -654,9 +672,9 @@
 	</div>
 	
 	<div id="idioma" class="w3-modal w3-auto w3-transparent w3-text-indigo" >
-		<div class="w3-modal-content" id="idioma">
-			<div class="modal-dialog">
-				<div class="modal-content">
+		<div class="w3-modal-content">
+			<div>
+				<div>
 					<div class="modal-container">
 						<span onclick="document.getElementById('idioma').style.display='none'" class="w3-button w3-display-topright">&times;</span>					
 						<!--aqui inserto selextor de idiomas-->
@@ -692,7 +710,7 @@
 		</div>
 	</div>
 
-	<footer class="about item4">
+	<footer class="about item3">
 		<p class="showes">Autor: Emma Ines Wahnish</p>
 		<p class="showen">Author: Emma Ines Wahnish</p>
 		<p class="showpt">Autor: Emma Ines Wahnish</p>
