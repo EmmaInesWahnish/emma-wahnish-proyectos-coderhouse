@@ -462,6 +462,7 @@ a:hover {
   font-weight: bold;
   color: darkslategrey;
   background-color: #EEEEEE;
+  font-size: small;
 } 
 
 .form__botones__submit {
@@ -470,7 +471,8 @@ a:hover {
   text-transform: uppercase;
   font-weight:bold;
   color: #2D85E5;
-  background-color: #EEEEEE; 
+  background-color: #EEEEEE;
+  font-size: small; 
 }
 
 .form {
