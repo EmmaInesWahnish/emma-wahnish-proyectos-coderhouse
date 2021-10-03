@@ -457,7 +457,9 @@ a:hover {
 /*características de los formularios*/
 .form__botones__reset {
   margin:15px;
-  border-style: groove;
+  padding:5px;
+  border-style:solid;
+  border-radius: 8px;
   text-transform: uppercase;
   font-weight: bold;
   color: darkslategrey;
@@ -467,7 +469,9 @@ a:hover {
 
 .form__botones__submit {
   margin:15px;
-  border-style:groove;
+  border-style:solid;
+  border-radius: 8px;
+  padding:5px;
   text-transform: uppercase;
   font-weight:bold;
   color: #2D85E5;
@@ -596,7 +600,7 @@ table {
   align-items: center;
   justify-items: center;
   padding:10px;
-  font-size:1.2em;
+  font-size:1.5em;
   font-weight:400;
   color:#2D85E5;
   width:100%;
@@ -702,14 +706,18 @@ table {
 /*botones*/
 button {
   color: #12355B;
+  border-radius: 8px;
   background-color: #91DBE6;
   text-transform: uppercase;
+  margin:5px;
+  padding:5px;
   font-weight: bold;
 }
 
 /*modal-container class*/
 .modal-container {
   border-color: #2D85E5;
+  padding:5px;
   border-style:ridge;
 }
 
