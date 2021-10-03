@@ -379,7 +379,6 @@ a:hover {
   width:auto;
   text-align: justify;
   font-style: 600;
-  color:#12355B;
 }
 
 .about li {
@@ -393,7 +392,8 @@ a:hover {
 }
 
 .about {
-  font-size: 1rem;
+  font-size: 0.8em;
+  color:#12355B;
  }
 /*finaliza seccion pagina acerca de nosotros*/
 
@@ -543,7 +543,7 @@ table {
   }
   
   th {
-    border: 3px solid #12355B;
+    border: 3px;
     color: #EFEFEF;
     background-color: #24B8CE;
     text-align: center;
@@ -553,7 +553,7 @@ table {
   }
 
   td {
-    border: 2px solid #12355B;
+    border: 2px;
     text-align: left;
     font-size:1em;
     padding: 8px;
