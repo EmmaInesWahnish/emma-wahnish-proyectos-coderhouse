@@ -36,6 +36,12 @@ $size-font:("chico":0.8em, "mediano":1em, "normal":1.5em, "grande":1.8em, "bieng
     font-family: $tipografia;
     color: $color-titulo-h4;
   }
+  body {
+    font-family: $tipografia;
+    color: $color-default;
+    background-color: $background-default;
+    font-size: map-get($size-font,"normal");
+  }
 
   /*botones*/
   button, .botones-basico {
