@@ -252,13 +252,13 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
   color: #12355B;
   font-size: 1em;
   font-weight: 400; }
-  .form .form__item {
+  .form__item {
     font-size: 0.8em;
     color: #12355B;
     padding: 5px;
     margin: 5px;
     border: 5px; }
-    .form .form__item .form__item__input {
+    .form__item__input {
       display: block;
       width: 40%;
       min-height: fit-content;
@@ -267,19 +267,19 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
       padding: 5px;
       border-color: #12355B;
       border-style: solid; }
-  .form .form__referencias {
+  .form__referencias {
     display: block;
     border: 3px;
     padding: 5px;
     margin: 3px;
     min-height: fit-content; }
-  .form .form__descripcion {
+  .form__descripcion {
     display: block;
     border: 3px;
     padding: 5px;
     margin: 3px;
     min-height: fit-content; }
-  .form .form__justifique {
+  .form__justifique {
     display: block;
     border: 3px;
     padding: 5px;

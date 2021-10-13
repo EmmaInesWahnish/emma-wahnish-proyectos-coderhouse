@@ -19,13 +19,13 @@
       color: $color-default;
       font-size: 1em;
       font-weight: 400;
-      .form__item {
+      &__item {
         font-size: 0.8em;
         color: $text-color;
         padding: 5px;
         margin: 5px;
         border: 5px;
-        .form__item__input {
+        &__input {
           display:block;
           width: 40%;
           min-height: fit-content;
@@ -36,7 +36,7 @@
           border-style:solid;
         }  
       }
-      .form__referencias {
+      &__referencias {
         display: block;
         border: 3px;
         padding: 5px;
@@ -44,14 +44,14 @@
         min-height: fit-content;
       }
       
-      .form__descripcion {
+      &__descripcion {
         display:block;
         border:3px;
         padding:5px;
         margin: 3px;
         min-height: fit-content;
       }
-      .form__justifique {
+      &__justifique {
         display:block;
         border:3px;
         padding:5px;
