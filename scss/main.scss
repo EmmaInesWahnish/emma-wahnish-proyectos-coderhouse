@@ -42,7 +42,7 @@
       text-decoration: none;
       text-transform: uppercase;
       font-family: $tipografia;
-      font-size: 1.2vw;
+      font-size:  map-get($size-font,"chico");
     }    
   }
   /*Fin navegacion*/
@@ -77,10 +77,10 @@
   }
 
   .about {
-    font-size: 0.8em;
+    font-size:  map-get($size-font,"maschico");
     color:$color-default;
     ul, ol{
-      font-size: 1.5vw;
+      font-size:  map-get($size-font,"mediano");
       li{
         display:block;
       }
@@ -125,20 +125,20 @@
   /*características de las tablas*/
   table {
       width: auto;
-      font-family: $tipografia;    
+      font-family: $tipografia; 
     th {
       border: 3px;
       color: $background-default;
       background-color: $color-fila-titulos-tabla;
       text-align: center;
       padding: 8px;
-      font-size: 1em;
+      font-size: map-get($size-font,"grande");
       font-weight: 400;
     }  
     td {
       border: 2px;
       text-align: left;
-      font-size:1em;
+      font-size: map-get($size-font,"normal");
       padding: 8px;
     }
   }  
