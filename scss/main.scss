@@ -204,23 +204,14 @@
       #{$percent}% {transform: rotate(#{$degree}deg);}
     }
   }
-
-
- @function mycalc() {
-    @for $i from 0 through 10{
-      $degree: $i*36;
-      $percent: $i*10;
-    }
-  }
   
   /* animación texto keyframes*/
   @keyframes reveal {
-      0%   {opacity:0;}
-    10%  {opacity:0.2;}
-    25%  {opacity:0.4;}
-    50%  {opacity:0.6;}
-    75%  {opacity:0.8;}
-    100% {opacity:1;}
+    @for $i from 0 through 10 {
+      $opacidad: ($i*10)/100;
+      $percent: $i*10;
+      #{$percent}% {opacity:#{$opacidad};}
+    }
   }
   
   /* animacion ranita*/
