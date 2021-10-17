@@ -350,13 +350,12 @@ footer {
     padding: 10px;
     margin: 5px;
     border: 5px;
-    font-size: 1.5em;
     font-style: 600;
     font-family: trebuchet;
     text-align: justify; }
 
 .about {
-  font-size: 0.5em;
+  font-size: 0.8em;
   color: #12355B; }
   .about ul, .about ol {
     font-size: 1em; }
@@ -404,12 +403,12 @@ table {
     background-color: #24B8CE;
     text-align: center;
     padding: 8px;
-    font-size: 1.8em;
+    font-size: 1em;
     font-weight: 400; }
   table td {
     border: 2px;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 8px; }
 
 /*fin caracteristica de las tablas*/
