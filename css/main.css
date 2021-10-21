@@ -121,39 +121,52 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
   display: grid;
   object-position: bottom;
   align-items: center;
+  align-content: space-between;
   border-style: none;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto;
   background-color: #EFEFEF;
   padding: 5px;
-  font-size: 1.2vw; }
+  font-size: 1.2vw;
+  /*    &__item1__necesito:hover &__item__necesito {
+      display: block;
+    }*/
+  /*   &__item2__circulo:hover .grid1-container__item__circle {
+      display: block;
+    }*/
+  /*   &__item3__ofrezco:hover &__item__ofrezco {
+      display: block;
+    }*/ }
   .grid1-container__item__necesito {
-    background-color: #91DBE6;
+    background-color: #EFEFEF;
     width: auto;
-    box-shadow: 5px 8px 16px 1px grey;
-    padding: 12px 16px;
-    display: none;
-    position: absolute; }
-  .grid1-container__item1__necesito:hover .grid1-container__item__necesito {
-    display: block; }
+    border: none;
+    color: #3930B1;
+    font-size: 1.5vw;
+    /*  box-shadow: 5px 8px 16px 1px grey;*/
+    padding: 10px 10px;
+    display: block;
+    /*position: absolute;*/ }
   .grid1-container__item__circle {
-    background-color: #91DBE6;
+    background-color: #EFEFEF;
     width: auto;
-    box-shadow: 5px 8px 16px 1px grey;
-    padding: 12px 16px;
-    display: none;
-    position: absolute; }
-  .grid1-container__item2__circulo:hover .grid1-container__item__circle {
-    display: block; }
+    border: none;
+    color: #3930B1;
+    font-size: 1.5vw;
+    /*  box-shadow: 5px 8px 16px 1px grey;*/
+    padding: 10px 10px;
+    display: block;
+    /*position: absolute;*/ }
   .grid1-container__item__ofrezco {
-    background-color: #91DBE6;
+    background-color: #EFEFEF;
     width: auto;
-    box-shadow: 5px 8px 16px 1px grey;
-    padding: 12px 16px;
-    display: none;
-    position: absolute; }
-  .grid1-container__item3__ofrezco:hover .grid1-container__item__ofrezco {
-    display: block; }
+    border: none;
+    color: #3930B1;
+    font-size: 1.5vw;
+    /*  box-shadow: 5px 8px 16px 1px grey;*/
+    padding: 10px 10px;
+    display: block;
+    /*position: absolute;*/ }
   .grid1-container__item1__necesito__texto {
     position: relative;
     align-self: center;
@@ -234,6 +247,16 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
     grid-area: cuatro; }
 
 /* fin grid graficos*/
+.flex-container {
+  display: flex;
+  flex-flow: row nowrap; }
+  .flex-container__item2 {
+    margin: 10px;
+    text-align: justify;
+    color: #3930B1;
+    font-size: 1em; }
+
+/* flex container*/
 /*fin para listados*/
 .w3-modal-content .form__item__input {
   display: block;

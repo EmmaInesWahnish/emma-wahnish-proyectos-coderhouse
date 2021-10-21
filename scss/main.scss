@@ -7,7 +7,7 @@
   /*características del pie de pagina*/
   footer {
     display:block;
-    font-size:1em;
+    font-size:map-get($size-font,"mediano");
     margin:0;
     padding:1em;
     border: $color-default;
