@@ -145,7 +145,7 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
     width: auto;
     border: none;
     color: #3930B1;
-    font-size: 1.5vw;
+    font-size: 1em;
     /*  box-shadow: 5px 8px 16px 1px grey;*/
     padding: 10px 10px;
     display: block; }
@@ -154,7 +154,7 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
     width: auto;
     border: none;
     color: #3930B1;
-    font-size: 1.5vw;
+    font-size: 1em;
     /*  box-shadow: 5px 8px 16px 1px grey;*/
     padding: 10px 10px;
     display: block;
@@ -164,7 +164,7 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
     width: auto;
     border: none;
     color: #3930B1;
-    font-size: 1.5vw;
+    font-size: 1em;
     /*  box-shadow: 5px 8px 16px 1px grey;*/
     padding: 10px 10px;
     display: block; }
@@ -548,8 +548,22 @@ img#circle {
 
 /*media queries*/
 @media only screen and (max-width: 400px) {
-  .grid1-container__item4 {
-    display: none; }
+  .grid1-container {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto; }
+    .grid1-container__item4 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      font-size: 1rem; }
+    .grid1-container__item__necesito {
+      font-size: 1rem; }
+    .grid1-container__item__circle {
+      font-size: 1rem;
+      align-self: center; }
+    .grid1-container__item__ofrezco {
+      font-size: 1rem; }
+    .grid1-container__item1__necesito__texto {
+      font-size: 1rem; }
   .grid-effect__item2 {
     display: none; }
   .about-container {
