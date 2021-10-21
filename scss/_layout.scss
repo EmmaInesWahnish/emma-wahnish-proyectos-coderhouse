@@ -90,33 +90,29 @@
     background-color: $background-default;
     padding: 5px;
     font-size:1.2vw;
+    &__item4{
+      border-style: none;
+      justify-self: center; 
+      box-shadow: 0 10px 10px 5px grey;
+      background-color:$color-fila-titulos-tabla;
+      margin:0;
+      padding:0;
+      p {
+        text-align: center;
+        color:#EFEFEF;
+        font-size: map-get($size-font,"normal");
+      }
+    }
     &__item__necesito {
       @include llamada-explicativa();
-      /*position: absolute;*/
     }
-    
-/*    &__item1__necesito:hover &__item__necesito {
-      display: block;
-    }*/
-
     &__item__circle {
       @include llamada-explicativa();
-      /*position: absolute;*/
+      align-self: center;
     }
-    
- /*   &__item2__circulo:hover .grid1-container__item__circle {
-      display: block;
-    }*/
-
     &__item__ofrezco {
       @include llamada-explicativa();      
-      /*position: absolute;*/
     }
-  
- /*   &__item3__ofrezco:hover &__item__ofrezco {
-      display: block;
-    }*/
-
     &__item1__necesito__texto {
       position: relative;
       align-self: center;

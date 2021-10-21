@@ -21,6 +21,7 @@ $size-font:("maschico":0.5em, "chico":0.8em, "mediano":1em, "normal":1.5em, "gra
     font-family: $tipografia;
     color:  $color-titulos-h1-h2;
     font-size:map-get($size-font,"biengrande");
+    text-shadow: 2px 2px 5px grey;
   }
   
   /*titulos h2 algo mas pequeños*/

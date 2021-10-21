@@ -17,7 +17,8 @@ img {
 h1 {
   font-family: trebuchet;
   color: #24B8CE;
-  font-size: 2em; }
+  font-size: 2em;
+  text-shadow: 2px 2px 5px grey; }
 
 /*titulos h2 algo mas pequeños*/
 h2 {
@@ -127,16 +128,18 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
   grid-template-rows: auto;
   background-color: #EFEFEF;
   padding: 5px;
-  font-size: 1.2vw;
-  /*    &__item1__necesito:hover &__item__necesito {
-      display: block;
-    }*/
-  /*   &__item2__circulo:hover .grid1-container__item__circle {
-      display: block;
-    }*/
-  /*   &__item3__ofrezco:hover &__item__ofrezco {
-      display: block;
-    }*/ }
+  font-size: 1.2vw; }
+  .grid1-container__item4 {
+    border-style: none;
+    justify-self: center;
+    box-shadow: 0 10px 10px 5px grey;
+    background-color: #24B8CE;
+    margin: 0;
+    padding: 0; }
+    .grid1-container__item4 p {
+      text-align: center;
+      color: #EFEFEF;
+      font-size: 1.5em; }
   .grid1-container__item__necesito {
     background-color: #EFEFEF;
     width: auto;
@@ -145,8 +148,7 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
     font-size: 1.5vw;
     /*  box-shadow: 5px 8px 16px 1px grey;*/
     padding: 10px 10px;
-    display: block;
-    /*position: absolute;*/ }
+    display: block; }
   .grid1-container__item__circle {
     background-color: #EFEFEF;
     width: auto;
@@ -156,7 +158,7 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
     /*  box-shadow: 5px 8px 16px 1px grey;*/
     padding: 10px 10px;
     display: block;
-    /*position: absolute;*/ }
+    align-self: center; }
   .grid1-container__item__ofrezco {
     background-color: #EFEFEF;
     width: auto;
@@ -165,8 +167,7 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
     font-size: 1.5vw;
     /*  box-shadow: 5px 8px 16px 1px grey;*/
     padding: 10px 10px;
-    display: block;
-    /*position: absolute;*/ }
+    display: block; }
   .grid1-container__item1__necesito__texto {
     position: relative;
     align-self: center;
