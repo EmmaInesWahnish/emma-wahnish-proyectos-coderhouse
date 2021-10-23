@@ -549,7 +549,7 @@ img#circle {
 /*media queries*/
 @media only screen and (max-width: 400px) {
   .banner-text {
-    font-size: 0.8rem; }
+    font-size: 1rem; }
   .grid1-container {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto; }
@@ -565,6 +565,8 @@ img#circle {
     .grid1-container__item__ofrezco {
       font-size: 1rem; }
     .grid1-container__item1__necesito__texto {
+      font-size: 1rem; }
+    .grid1-container__item3__ofrezco__texto {
       font-size: 1rem; }
   .grid-effect__item2 {
     display: none; }
