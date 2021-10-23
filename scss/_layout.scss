@@ -85,7 +85,7 @@
     align-items:center;
     align-content: space-between;
     border-style: none;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 4fr 1fr 4fr 3fr;
     grid-template-rows:auto;
     background-color: $background-default;
     padding: 5px;
@@ -95,7 +95,7 @@
       justify-self: center; 
       box-shadow: 0 10px 10px 5px grey;
       background-color:$color-fila-titulos-tabla;
-      margin:0;
+      margin:5px;
       padding:0;
       p {
         text-align: center;

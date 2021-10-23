@@ -124,7 +124,7 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
   align-items: center;
   align-content: space-between;
   border-style: none;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 4fr 1fr 4fr 3fr;
   grid-template-rows: auto;
   background-color: #EFEFEF;
   padding: 5px;
@@ -134,7 +134,7 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
     justify-self: center;
     box-shadow: 0 10px 10px 5px grey;
     background-color: #24B8CE;
-    margin: 0;
+    margin: 5px;
     padding: 0; }
     .grid1-container__item4 p {
       text-align: center;
