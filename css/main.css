@@ -124,7 +124,7 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
   align-items: center;
   align-content: space-between;
   border-style: none;
-  grid-template-columns: 4fr 1fr 4fr 3fr;
+  grid-template-columns: auto auto auto auto;
   grid-template-rows: auto;
   background-color: #EFEFEF;
   padding: 5px;
@@ -548,7 +548,7 @@ img#circle {
     transform: matrix(1, 0, 0, 1, 1, 1); } }
 
 /*media queries*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .banner-text {
     font-size: 1rem; }
   .grid1-container {
@@ -575,7 +575,7 @@ img#circle {
     grid-template-columns: auto;
     grid-template-rows: auto auto; } }
 
-@media only screen and (min-width: 601px) and (max-width: 960px) {
+@media only screen and (min-width: 501px) and (max-width: 960px) {
   .banner-text {
     font-size: 1rem; }
   .grid1-container__item4 {

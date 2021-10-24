@@ -224,7 +224,7 @@
   }
   
   /*media queries*/
-  @media only screen and (max-width:600px) {
+  @media only screen and (max-width:500px) {
     .banner-text {
       font-size:1rem; 
     }
@@ -265,7 +265,7 @@
     }
   }
   
-  @media only screen and (min-width: 601px) and (max-width: 960px) {
+  @media only screen and (min-width: 501px) and (max-width: 960px) {
     .banner-text {
       font-size:1rem; 
     }
