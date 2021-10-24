@@ -310,6 +310,7 @@ button, .botones-basico, .form__botones__reset, .form__botones__submit {
     margin: 3px;
     min-height: fit-content; }
   .form textarea {
+    width: 100%;
     border: 3px;
     border-color: #12355B;
     border-style: solid; }
@@ -547,7 +548,7 @@ img#circle {
     transform: matrix(1, 0, 0, 1, 1, 1); } }
 
 /*media queries*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .banner-text {
     font-size: 1rem; }
   .grid1-container {
@@ -574,7 +575,22 @@ img#circle {
     grid-template-columns: auto;
     grid-template-rows: auto auto; } }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .banner-text {
+    font-size: 1rem; }
+  .grid1-container__item4 {
+    font-size: 0.8rem; }
+  .grid1-container__item__necesito {
+    font-size: 1rem; }
+  .grid1-container__item__circle {
+    font-size: 1rem;
+    align-self: center; }
+  .grid1-container__item__ofrezco {
+    font-size: 1rem; }
+  .grid1-container__item1__necesito__texto {
+    font-size: 1rem; }
+  .grid1-container__item3__ofrezco__texto {
+    font-size: 1rem; }
   .grid1-container__item4 .grid-effect__item2 {
     display: block; } }
 

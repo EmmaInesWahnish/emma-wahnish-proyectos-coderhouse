@@ -224,7 +224,7 @@
   }
   
   /*media queries*/
-  @media only screen and (max-width:400px) {
+  @media only screen and (max-width:600px) {
     .banner-text {
       font-size:1rem; 
     }
@@ -265,7 +265,33 @@
     }
   }
   
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
+  @media only screen and (min-width: 601px) and (max-width: 960px) {
+    .banner-text {
+      font-size:1rem; 
+    }
+  
+    .grid1-container {
+      &__item4 {
+        font-size: 0.8rem;
+      }
+      &__item__necesito {
+        font-size: 1rem;
+      }
+      &__item__circle {
+        font-size: 1rem;
+        align-self: center;
+      }
+      &__item__ofrezco {
+        font-size: 1rem;
+      } 
+      &__item1__necesito__texto {
+        font-size: 1rem;
+      }
+      &__item3__ofrezco__texto {
+        font-size: 1rem;
+      }
+    }
+
     .grid1-container__item4 .grid-effect__item2 {
       display:block;
     }  
